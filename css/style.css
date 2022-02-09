@@ -244,9 +244,9 @@ nav a{
 }
 
 .index_banner_text h2:nth-child(1){
-    letter-spacing: .8em;
+    /* letter-spacing: .8em; */
     font-size: 50px;
-    left: 45%;
+    left: 47%;
     top: 30%;
 }
 
@@ -259,7 +259,7 @@ nav a{
 .index_banner_text h3{
     font-size: 26px;
     letter-spacing: .2em;
-    left: 34%;
+    left: 37%;
     top: 42%;
 } 
 
