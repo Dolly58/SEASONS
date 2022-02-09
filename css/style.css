@@ -1,0 +1,912 @@
+@import url("reset.css");
+
+/******** 字體顏色 ********/
+h2{
+    font-size:30px;
+    color: #292421;
+}
+
+h3{
+    font-size:20px;
+    color: #433E3B;
+}
+
+h4{
+    font-size:18px;
+    color: #433E3B;
+}
+
+p{
+    font-size:14px;
+    color: #433E3B;
+}
+
+.font_white{
+    font-size: 12px;
+    color: #FFFAFA;
+}
+
+/******** 按鈕 ********/
+.btn1{
+    font-size:14px;
+    color: #292421;
+    border: 1px solid #292421;
+    padding: 5px 10px;
+}
+
+button{
+    background-color: Transparent;
+    border:none;
+}
+
+.button{
+    color:#FFFAFA; ;
+}
+
+/******** icon ********/
+.icon{
+    width: 20px;
+    margin: 0px auto;
+    display: block;
+}
+
+
+/* ------------- body ------------- */
+body{
+    font-family: 'Noto Serif TC', serif, '微軟正黑體', 'Arial';
+    background-color: #FFFAFA;
+    position: relative;
+    line-height: 1.6;
+    box-sizing: border-box;
+    list-style-type:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ------------- breadcrumb ------------- */
+.breadcrumbList{
+    height: 35px;
+    padding: 10px 100px;
+    /* opacity: .9; */
+    /* background-color: #EFEBEB; */
+    margin: 0 auto;
+}
+
+.breadcrumb{
+    display: flex;
+    width: 500px;
+    justify-content: left;
+}
+
+.breadcrumb li{
+    flex-basis: 100px;
+}
+
+.breadcrumb a{
+    /* padding-right: 10px; */
+    color: #ADAAA5;
+    font-size: 10px;
+    letter-spacing: .2em;
+    
+}
+
+
+.breadcrumb li+li::before {
+    content: "/"; 
+    color: #ADAAA5;
+    padding-right: 20px; 
+}
+
+/* .breadcrumb a:last-child{
+    color: #292421 ; 
+} */
+
+
+/* -------------主選單(上排固定) ------------- */
+nav img{
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}
+
+nav ul{
+    height: 50px;
+    margin: 0 auto;
+    line-height: 50px;
+    top:0;
+    left:0;
+    right: 0;
+    margin: a;
+    display: inline;
+    position: absolute;
+
+    /* background-color: #191F45 ;
+    position: fixed;
+    z-index: 1; */
+}
+
+
+nav ul li img{
+    float: left;
+    width: 160px;
+    height: 30px;
+    margin:7px 0;
+}
+
+nav ul li .font_white{
+    float: right;
+    padding: 0 20px;
+    text-align: right;
+}
+
+nav a{
+    text-decoration: none; 
+    opacity:0.9;
+}
+
+
+/* ------------- 主選單(左側固定) ------------- */
+.nav_left a{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    letter-spacing: .6em;
+    color:#292421;
+    font-size: 10px;
+
+    left: 30px;
+    top: 50%;
+    margin: auto;
+    position: fixed;
+    transform:translateY(-50%);
+
+    z-index: 1;
+}
+
+
+/* ------------- 主選單(右側固定) ------------- */
+.nav_right{
+    display: inline-flex;
+    flex-direction: column;
+    z-index: 2;
+
+    top: 50%;
+    right: 30px;
+    margin: auto;
+    position: fixed;
+    transform:translateY(-50%);
+}
+
+.nav_right i{
+    font-size: 22px;
+    margin: 0 auto;
+    letter-spacing: 7px;
+    color:#292421;
+    float: right;
+    margin-bottom: 17px;
+}
+
+/* .nav_right a:nth-child(4){
+    padding-top: 130px;
+} */
+
+.nav_right_top{
+    display: inline-flex;
+    flex-direction: column;
+    z-index: 3;
+
+    top: 93%;
+    right: 30px;
+    margin: auto;
+    position: fixed;
+    transform:translateY(-50%);
+}
+
+.nav_right_top i{
+    font-size: 22px;
+    margin: 0 auto;
+    letter-spacing: 7px;
+    color:#292421;
+    float: right;
+    margin-bottom: 17px;
+}
+
+
+/* ------------- 首頁_區塊間距與顏色------------- */
+.wrapper_1, .wrapper_2, .wrapper_3{
+    padding: 100px;
+    overflow: hidden;
+}
+
+.wrapper_2_bg, .wrapper_2, .wrapper_4, .wrapper_5 {
+    background-color: #EFEBEB;
+}
+
+.wrapper_1 h2 , .wrapper_1 h3 , .icon , .wrapper_4 h2  {
+    text-align:center;
+    margin-bottom: 40px;
+    letter-spacing: .4em;
+}
+
+/* ------------- 首頁_大b壓字------------- */
+.index_banner{
+    display: block;
+    overflow: hidden;
+    position: relative;
+} 
+
+
+.index_banner_text h2, .index_banner_text h3 {
+    /* writing-mode: vertical-lr; */
+    color: #FFFAFA;
+    position: absolute;
+}
+
+.index_banner_text h2:nth-child(1){
+    letter-spacing: .8em;
+    font-size: 50px;
+    left: 45%;
+    top: 30%;
+}
+
+/* .index_banner_text h2:nth-child(2){
+    font-size: 7px;
+    left: 692px;
+    top: 296px;
+} */
+
+.index_banner_text h3{
+    font-size: 26px;
+    letter-spacing: .2em;
+    left: 34%;
+    top: 42%;
+} 
+
+/* ------------- 首頁_區塊一_簡介------------- */
+.wrapper_1 .banner_circle{
+    margin: 0px auto;
+    padding-top: 30px;
+    display: block;
+    border-radius:50% 50% 0% 0%;
+}
+
+.wrapper_1 h3, .wrapper_4 h3 {
+    line-height:2;
+}
+
+/* ------------- 首頁_區塊二(三)_豪華帳棚 ------------- */
+.wrapper_2_bg{
+    width: 100%;
+    /* background-color: #EFEBEB; */
+}
+
+.wrapper_2, .wrapper_3 {
+    box-sizing: border-box;
+    display: flex;
+    overflow: hidden;
+    /* width: 100% */
+
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper_2 img , .wrapper_3 img{
+    width: 30%;
+    margin: 0 auto;
+}
+.wrapper_2 img{
+    margin-left: 130px;
+}
+
+.wrapper_2 .text, .wrapper_3 .text{
+    text-align:left;
+    margin: 100px 50px;
+}
+
+.wrapper_2 .text{
+    margin-right: 150px;
+}
+
+.wrapper_2 h3, .wrapper_3 h3{
+    display: inline-block;
+    margin: 0 left;
+    border-bottom: 3px solid #ADAAA5;
+    margin-bottom: 30px;
+}
+
+.wrapper_2 p, .wrapper_3 p{
+    width: 300px;
+    margin-bottom: 70px;
+    letter-spacing: .4em;
+}
+
+
+/* ------------- 首頁_區塊三_木屋 ------------- */
+
+.wrapper_3{
+    background-color: #FFFAFA;
+}
+
+.wrapper_3 .text{
+    order:-1 ;
+    margin-left: 130px;
+}
+
+.wrapper_3 img{
+    margin-right: 130px;
+}
+
+
+/* ------------- 首頁_區塊四_圖 ------------- */
+.wrapper_4{
+    margin: 0 auto;
+    padding: 80px 80px 0 80px;
+}
+
+.wrapper_4 h3 {
+    text-align:center;
+    letter-spacing: .4em;
+}
+
+.wrapper_4 h2, .icon{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+.wrapper_5{
+    width: 100%;
+    overflow: hidden;
+    padding: 50px 0 100px 0;
+}
+
+.banner_nature{
+    /* display: flex;
+    justify-content: center; */
+    /* flex-wrap:wrap; */
+
+    margin: 0 auto;
+    width: 100%;
+}
+
+.banner_nature ul{
+    width: 100%;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.banner_nature img{
+    width: 300px;
+    margin-right: 10px;
+    /* margin-bottom: 100px; */
+    /* margin-top: 50px; */
+}
+
+/* ------------- 首頁_區塊四_圖_動畫 ------------- */
+
+.banner_nature{
+    animation: picmove 30s linear infinite forwards; 
+}
+
+@keyframes picmove { 
+    from { transform: translate(0); } 
+    to { transform: translate(-1500px); } 
+}
+
+.banner_nature:hover { 
+    animation-play-state: paused; 
+}
+
+
+/* ------------- 內容間距 ------------- */
+.products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap, .camp_facillties{
+    padding: 50px 100px 100px 100px
+}
+
+.products_1 h2, .products_1 p,.products_1 h4,  .products_2 h2,  .products_2 p, .products_2 h4, .products_3 h2,  .products_3 p,.products_3 h4, .camping_1 h2, .camping_1 p ,.camping_2 h2, .camping_2 p,.experience h4,.camping_3 h2, .camping_3 p, .news_title, .about h2, .about p , .campmap h2, .camp_facillties h2{
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: .4em;
+}
+
+.products_1 p, .products_1 h4, .products_2 p, .products_2 h4, .products_3 p,.products_3 h4, .experience p, .experience h4, .camping_1 p, .camping_2 p, .camping_3 p, .about p, .camp_facillties h2, .campmap h2 {
+    margin-bottom: 50px;
+}
+
+
+.experience h2, .experience p,  .experience h{
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: .4em;
+    display: block;
+}
+
+
+.products_2, .camping_2, .camp_facillties{
+    background-color: #EFEBEB;
+}
+
+/* ------------- 產品總覽_區塊一(體驗_大小標) ------------- */
+.products_1 ul,  .products_2 ul,  .products_3 ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products_1 img,  .products_2 img,  .products_3 img{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+
+/* ------------- 特色體驗_圖片排版 ------------- */
+.experience{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.experience ul{
+    width: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.experience li{
+    display: block;
+    overflow: hidden;
+    margin:  0 15px;
+
+    position: relative;
+}
+
+.experience li>p{
+    margin-bottom: 80px;
+}
+
+.experience p{
+    margin-bottom: 50px;
+}
+
+
+/* ------------- 小標籤(圖片) ------------- */
+.tab {
+    background-image: url(../pic/tab.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 50px;
+
+    position: absolute;
+    left: 230px;
+    top: 0px;
+}
+.tab p{
+    font-size: 5px;
+    line-height: 1;
+    text-align: center;
+    padding: 5px 0;
+}
+
+/* ------------- 帳篷單品 ------------- */
+
+.camping_1 h2, .camping_1 p,.camping_2 h2, .camping_2 p,.camping_3 h2, .camping_3 p{
+    text-align: left;
+}
+
+.camping_text{
+    margin-top: 10px;
+}
+
+.camping_1 img, .camping_2 img, .camping_3 img{
+    margin-right: 10px;
+}
+
+.camping_1 ul, .camping_2 ul, .camping_3 ul{
+    display: flex;
+    overflow: hidden;
+}
+
+.camping_text p{
+    letter-spacing: .4em;
+    line-height : 2;
+    
+}
+
+
+/* ------------- 最新消息_選單 ------------- */
+.news_title{
+    margin-bottom: 50px;
+    padding: 50px 100px 0 100px;
+}
+
+.news_title h2{
+    letter-spacing: .4em;
+}
+
+.news_title ul {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.news_title ul li{
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid #FFFAFA;
+}
+
+.news_title h4{
+    margin-bottom: 10px;
+}
+/* ------------- 最新消息_box ------------- */
+.news_main{
+    padding: 0 100px;
+    overflow: hidden;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.news_box img{
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.news_box{
+    width: 300px;
+    height: 300px;
+    background-color: #191F45;
+    margin: 0 15px;
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.news_box p{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    letter-spacing: .1em;
+}
+ 
+
+.triangle{
+    position: absolute;
+    left: 270px;
+    top: 0px;
+    border-color: #F7C242 #F7C242 transparent #F7C242;
+    border-style: solid solid solid solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+}
+
+
+.triangle .tab_border{
+    text-align: center;
+    line-height: 40px;
+    color: #191F45;
+    font-size: 5px;
+    line-height: 15px;
+    
+    position: absolute;
+    left: -13px;
+    top: -13px;
+}
+
+/* ------------- 關於我們_四季 ------------- */
+.about img{
+    height: 30px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+.about ul{
+    height: 500px;
+    margin: 0 auto;
+    outline: 5px solid white;
+
+    display: flex;
+}
+
+.about li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+}
+
+.about_pic01 {
+    background-image: url(../pic/about/pic_01.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about_pic02 {
+    background-image: url(../pic/about/pic_02.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about_pic03{
+    background-image: url(../pic/about/pic_03.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about_pic04 {
+    background-image: url(../pic/about/pic_04.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about ul li:hover{
+    flex-grow: 3;
+}
+
+/* ------------- 營區地圖_地圖 ------------- */
+
+.campmap_pic{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../pic/campmap/map_cut.png);
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.campmap i {
+    color: #191F45;
+    position: absolute;
+    font-size: 36px;
+
+    animation:icon_move 2s infinite;
+}
+
+.campmap .icon1{
+    top: 70px;
+    left: 470px;
+    
+}
+
+.campmap .icon2 {
+    top: 110px;
+    left: 553px;
+}
+
+.campmap .icon3 {
+    top: 205px;
+    left: 400px;
+}
+
+.campmap .icon4 {
+    top: 183px;
+    left: 330px;
+}
+
+.campmap .icon5 {
+    top: 65px;
+    left: 390px;
+}
+
+.campmap .icon6 {
+    top: 330px;
+    left: 380px;
+}
+
+.campmap .icon7 {
+    top: 250px;
+    left: 670px;
+}
+
+.campmap .icon8 {
+    top: 320px;
+    left: 650px;
+}
+
+@keyframes icon_move{
+	0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+/* ------------- 營區地圖_設施 ------------- */
+.facillties_box{
+    width: 800px;
+    height: 300px;
+    background-color: #191F45;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    box-sizing: border-box;
+
+    position:relative;
+}
+
+
+.facillties_box_text {
+    float: right;
+    padding: 40px 30px;
+}
+
+.facillties_box_text h3, .facillties_box_text p ,.facillties_box_text a {
+    margin-bottom: 20px;
+    color: #FFFAFA;
+    letter-spacing: .2em;
+}
+
+.facillties_box_text a{
+    border:  1px solid #FFFAFA;
+}
+
+.facillties_box_text p {
+    margin-bottom: 50px;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    border-style: solid solid solid solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+}
+
+.left{
+    border-color: transparent #191F45 transparent transparent;
+    left: -55px;
+    top: 150px;
+}
+
+.right{
+    border-color: transparent transparent transparent #191F45;
+    left: 825px;
+    top: 150px;
+}
+
+/* ------------- foooter ------------- */
+footer{
+    padding: 60px 100px;
+    /* background-color: #191F45; */
+    background-image: url(../pic/footer_bg.jpg);
+    background-position: center;
+    letter-spacing: .1em;
+    text-align: 1.6;
+
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+}
+
+.footer a, .footer p{
+    font-size: 12px;
+    color: #FFFAFA;
+}
+
+.footer_left, .footer_center, .footer_right{
+    width: 230px;
+    flex-grow: 1;
+    margin-bottom: 40px;
+}
+
+.footer_left, .footer_center{
+    width: 150px;
+    height: 150px;
+}
+
+iframe{
+    margin: 0 auto;
+    width: 500px;
+    height: 150px;
+    margin-left: 30px;
+    flex-grow: 1;
+    margin-bottom: 40px;
+    margin: 0 auto;
+}
+
+.footer_bottom{
+    width: 1400px;
+    height: 10px;
+    flex-grow: 1;
+    padding-top: 20px;
+}
+
+.footer_bottom p{
+    text-align: center;
+}
+
+/* ------------- 底線hover  ------------- */
+ul li .font_white:hover, footer a:hover{
+    border-bottom: 1px solid #FFFAFA;
+    opacity:1;
+}
+
+/* ------------- 透明度hover  ------------- */
+.nav_left a:hover , .nav_right i:hover , .wrapper_2 a:hover, .wrapper_3 a:hover, .facillties_box_text .btn1:hover {
+    opacity:.4;
+}
+
+
+/* ------------- 產品總覽hover  ------------- */
+.products_1 li:hover, .products_2 li:hover,.products_3 li:hover, .experience li:hover{
+    opacity: .7;
+}
+
+/* ------------- button hover  ------------- */
+button:hover, .arrow:hover{
+    transform: scale(1.2);
+}
+
+/* ------------- news_text hover  ------------ */
+.news_title  li:hover{
+    opacity: .7;
+    letter-spacing: .9em;
+    border-bottom: 1px solid #ADAAA5;
+}
+
+/* ------------- news_box hover  ------------ */
+.news_box:hover{
+    opacity: .7;
+}
+
+/* ------------- breadcrumb hover  ------------ */
+.breadcrumb a:hover{
+    color: #292421;
+    border-bottom: 1px solid #292421 ;
+}
+/* ------------- campmap_pic_i hover  ------------ */
+.campmap_pic i:hover:before{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    color: #FFFAFA;
+    font-size: 14px;
+    background: #191F45;
+    padding: 10px;
+    font-family: 'Noto Serif TC', serif, '微軟正黑體', 'Arial';
+    width: 100px;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+.campmap_pic .icon1:hover:before{
+    content: '自搭帳篷區';
+}
+
+.campmap_pic .icon2:hover:before{
+    content: '豪華帳篷';
+}
+
+.campmap_pic .icon3:hover:before{
+    content: '別墅小木屋';
+}
+
+.campmap_pic .icon4:hover:before{
+    content: '星空露營車';
+}
+
+.campmap_pic .icon5:hover:before{
+    content: '營火烤肉區';
+}
+
+.campmap_pic .icon6:hover:before{
+    content: '星空電影院';
+}
+
+.campmap_pic .icon7:hover:before{
+    content: '服務中心';
+}
+
+.campmap_pic .icon8:hover:before{
+    content: '停車場';
+}
