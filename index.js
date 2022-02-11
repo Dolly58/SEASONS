@@ -6,5 +6,5 @@ window.addEventListener("scroll", function(e){
     console.log("scrollY: " + window.scrollY);
   });
 
-  1640
+  AOS.init();
 

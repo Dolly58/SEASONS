@@ -778,7 +778,8 @@ nav a{
 footer{
     padding: 60px 100px;
     /* background-color: #191F45; */
-    background-image: url(../pic/footer_bg.jpg);
+    /* background-image: url(../pic/footer_bg.jpg); */
+    background-color: #191F45;
     background-position: center;
     letter-spacing: .1em;
     text-align: 1.6;
