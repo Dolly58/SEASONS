@@ -410,7 +410,7 @@ nav a{
     letter-spacing: .4em;
 }
 
-.products_1 p, .products_1 h4, .products_2 p, .products_2 h4, .products_3 p,.products_3 h4, .experience p, .experience h4, .camping_1 p, .camping_2 p, .camping_3 p, .about p, .camp_facillties h2, .campmap h2 {
+.products_1 p, .products_1 h4, .products_2 p, .products_2 h4, .products_3 p,.products_3 h4, .experience p, .experience h4, .about p, .camp_facillties h2, .campmap h2 {
     margin-bottom: 50px;
 }
 
@@ -515,9 +515,16 @@ nav a{
 .camping_text p{
     letter-spacing: .4em;
     line-height : 2;
-    
 }
 
+
+.camping_1>p, .camping_>p, .camping_3>p{
+    margin-bottom: 20px;
+}
+
+.showcontent {
+    display: none;
+}
 
 /* ------------- 最新消息_選單 ------------- */
 .news_title{
