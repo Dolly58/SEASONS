@@ -105,10 +105,16 @@ a{
 
 
 /* -------------主選單(上排固定) ------------- */
-nav img{
+.logo_white{
     margin: 0 auto;
     width: 100%;
     display: block;
+}
+
+.logo_black{
+    margin: 0 auto;
+    width: 100%;
+    display: none;
 }
 
 /* .nav_top ul{
@@ -149,22 +155,30 @@ nav a{
 .nav_top{
     width: 100%;
     height: 50px;
+    background-color: none;
+
     line-height: 50px;
     top:0;
     left:0;
     right: 0;
-    margin: a;
-    position: absolute;
+    margin: auto;
+    position: fixed;
+    z-index: 9999;
 }
 /* ------------- 選單滾動色彩 ------------- */
-.scroll {
+/* .scroll {
     position: fixed;
-    color: #000;
-}
+    color: #292421;
+} */
 
 .scroll a {
-    color: #fff;
-  }
+    color: #292421;
+}
+
+.bg_color{
+    background-color: #FFFAFA;
+}
+
 /* ------------- 主選單(左側固定) ------------- */
 .nav_left a{
     writing-mode: vertical-rl;

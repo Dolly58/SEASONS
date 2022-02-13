@@ -1,10 +1,10 @@
 "use strict"
 
 /*********** 網頁高度 ***********/
-// window.addEventListener("scroll", function(e){
-//     console.log("scrollX: " + window.scrollX);
-//     console.log("scrollY: " + window.scrollY);
-//   });
+window.addEventListener("scroll", function(e){
+    console.log("scrollX: " + window.scrollX);
+    console.log("scrollY: " + window.scrollY);
+  });
 
   
 /*********** 單品頁展開收合***********/
@@ -30,10 +30,16 @@ $(document).ready(function(){
 // }
 
 /*********** 選單 ***********/
-$(window).scroll(function(){            //當視窗滾動時
-  if ( $(this).scrollTop() > 700) {     //如果視窗向下滾動100px
-    $('#nav_top').addClass('scroll');  //header 加上我們剛剛寫好的scroll css
+$(window).scroll(function(){
+  if ( $(this).scrollTop() > 750) {
+    $('.nav_top').addClass('scroll');
+    // $('.nav_top').addClass('bg_color');
+    $('.logo_white').css("display","none");
+    $('.logo_black').css("display","block")
   } else {
-    $('#nav_top').removeClass('scroll'); //如果沒有的話就刪除 scroll css
+    $('.nav_top').removeClass('scroll');
+    // $('.nav_top').removeClass('bg_color');
+    $('.logo_white').css("display","block");
+    $('.logo_black').css("display","none")
  }
 });
