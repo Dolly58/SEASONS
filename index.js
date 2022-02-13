@@ -6,8 +6,6 @@
 //     console.log("scrollY: " + window.scrollY);
 //   });
 
-/*********** 執行AOS ***********/
-  // AOS.init();
   
 /*********** 單品頁展開收合***********/
 // $(document).ready(function(){
