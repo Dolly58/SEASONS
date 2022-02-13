@@ -303,7 +303,7 @@ nav a{
 }
 
 /* ------------- 首頁_區塊二(三)_豪華帳棚 ------------- */
-.wrapper_2_bg{
+.wrapper_2_bg, .wrapper_3_bg{
     width: 100%;
     /* background-color: #EFEBEB; */
 }
