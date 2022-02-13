@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 /*********** 主選單顏色變化 ***********/
 $(window).scroll(function(){
-  if ( $(this).scrollTop() > 750) {
+  if ( $(this).scrollTop() > 390) {
     $('.nav_top').addClass('scroll');
     $('.nav_top').addClass('bg_color');
     $('.logo_white').css("display","none");
