@@ -308,6 +308,10 @@ nav a{
     /* background-color: #EFEBEB; */
 }
 
+.wrapper_3_bg{
+    background-color: #FFFAFA;
+}
+
 .wrapper_2, .wrapper_3 {
     box-sizing: border-box;
     display: flex;
