@@ -526,6 +526,19 @@ nav a{
     display: none;
 }
 
+.hidetogglebtn{
+    display: block;
+
+}
+
+.camping_text_show button, .camping_text_show p{
+    display: inline;
+}
+
+.camping_text_show button{
+    font-size: 18px;
+}
+
 /* ------------- 最新消息_選單 ------------- */
 .news_title{
     margin-bottom: 50px;
