@@ -28,3 +28,12 @@ $(document).ready(function(){
 //   }
 //   });
 // }
+
+/*********** 選單 ***********/
+$(window).scroll(function(){            //當視窗滾動時
+  if ( $(this).scrollTop() > 700) {     //如果視窗向下滾動100px
+    $('#nav_top').addClass('scroll');  //header 加上我們剛剛寫好的scroll css
+  } else {
+    $('#nav_top').removeClass('scroll'); //如果沒有的話就刪除 scroll css
+ }
+});
