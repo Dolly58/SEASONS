@@ -176,7 +176,8 @@ nav a{
 }
 
 .bg_color{
-    background-color: #FFFAFA;
+    /* background-color: #FFFAFA; */
+    background-image: url(/pic/nav_2.png);
 }
 
 /* ------------- 主選單(左側固定) ------------- */
