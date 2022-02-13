@@ -105,6 +105,13 @@ a{
 
 
 /* -------------主選單(上排固定) ------------- */
+.nav_top ul li img{
+    float: left;
+    width: 160px;
+    height: 30px;
+    margin:7px 0;
+}
+
 .logo_white{
     margin: 0 auto;
     width: 100%;
@@ -133,14 +140,6 @@ a{
     z-index: 1; 
 } */
 
-
-.nav_top ul li img{
-    float: left;
-    width: 160px;
-    height: 30px;
-    margin:7px 0;
-}
-
 .nav_top ul li .font_white{
     float: right;
     padding: 0 20px;
@@ -150,6 +149,7 @@ a{
 nav a{
     text-decoration: none; 
     opacity:0.9;
+    color: #FFFAFA;
 }
 
 .nav_top{
@@ -215,7 +215,7 @@ nav a{
     font-size: 22px;
     margin: 0 auto;
     letter-spacing: 7px;
-    color:#FFFAFA;
+    color:#292421;
     float: right;
     margin-bottom: 17px;
 }
