@@ -1,10 +1,4 @@
 "use strict"
-
-/*********** 網頁高度 ***********/
-// window.addEventListener("scroll", function(e){
-//     console.log("scrollX: " + window.scrollX);
-//     console.log("scrollY: " + window.scrollY);
-//   });
   
 /*********** 單品頁展開收合***********/
 $(document).ready(function(){
@@ -29,8 +23,6 @@ $(document).ready(function(){
 // }
 
 
-
-
 /*********** 選單顏色變化 ***********/
 $(window).scroll(function(){
   if ( $(this).scrollTop() > 395) {
@@ -46,6 +38,24 @@ $(window).scroll(function(){
  }
 });
 
-/*********** 選單顏色變化 ***********/
+/*********** 最新消息彈窗 ***********/
+let popup = document.getElementsByClassName('windows')[0];
+let mark = document.getElementsByClassName('news_bg')[0];
+let Xbtn = document.getElementById('close');
+let box = document.getElementById('box');
+
+box.onclick = function show(){
+  popup.classList.remove("noshow")
+  mark.classList.add("mark")
+}
 
 
+Xbtn.onclick  = function close(){
+  popup.classList.add("noshow")
+  mark.classList.remove("mark")
+}
+
+mark.onclick  = function close(){
+  popup.classList.add("noshow")
+  mark.classList.remove("mark")
+}

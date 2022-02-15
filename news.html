@@ -12,10 +12,6 @@
     <title>四時 Seasons</title>
 </head>
 <body>
-<!----------- 遮罩 ------------> 
-<div class="popupcontent">
-</div>
-
 <!----------- 選單列開始 ------------>
 <nav>
 <!----------- 首頁大圖 ------------>
@@ -31,6 +27,7 @@
       </ol>
     </div>
   </div>
+
 
 <!----------- 上排選單 ------------>
 <div class="nav_top" id="nav_top">
@@ -48,7 +45,7 @@
         <li><a class="font_white"  href="experience.html">特色體驗</a></li>
         <li><a class="font_white" href="products.html">豪華露營</a></li>
     </ul>
-  </div>
+</div>
 
 <!----------- 選單列(左側固定) ------------>  
 <div class="nav_left">
@@ -81,13 +78,13 @@
     </ul>
 </div>
 <!----------- 最新消息_彈窗 ------------>
-<div class="windows">
+<div class="windows noshow">
     <div class="windows_bn">
         <img src="./pic/news/news_window01.png" alt="">
     </div>
     
     <div class="windows_text">
-    <h2>疫情公告</h2>
+    <h2>新冠肺炎疫情公告</h2>
     <p><i class="fas fa-calendar"></i> 2022/01/30</p>
     <p>因應新冠肺炎國內本土疫情未歇，為了各位旅客以及國人的健康，旅客可以選擇延期或扣除必要費用後全額退款，後續行程異動，將視疫情發展情況與中央疫情指揮中心政策調整。<br><br>
     營區規定：<br>
@@ -108,13 +105,15 @@
     為維護您我的健康、採取必要的防疫措施，若期間諸多限制造成不便還需請見諒，再次感謝各位的配合與支持。</p>
     </div>
     
-    <button class="close">X</button>
+    <button id="close">X</button>
 </div>
-
+<!----------- 遮罩 ------------> 
+<div class="news_bg">
+</div>
 <!----------- 最新消息_box ------------>
 <div class="news_main">
-    <div class="news_box">
-        <a href="#" target="_blank">
+    <div class="news_box" id="box">
+        <!-- <a href="" target="_blank"> -->
         <img src="./pic/news/pic01.png" alt="">
 
         <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
@@ -225,7 +224,7 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="/index.js"></script>
+  <script src="index.js"></script>
   <script>AOS.init();</script>
 </body>
 </html>
