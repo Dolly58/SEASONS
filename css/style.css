@@ -601,6 +601,7 @@ nav a{
 }
 /* ------------- 最新消息_box ------------- */
 .news_main{
+
     padding: 0 100px;
     overflow: hidden;
     margin-bottom: 150px;
@@ -612,6 +613,7 @@ nav a{
 .news_box img{
     margin: 0 auto;
     margin-bottom: 5px;
+    width: 300px;
 }
 
 .news_box{
@@ -629,7 +631,11 @@ nav a{
     margin-left: 10px;
     letter-spacing: .1em;
 }
- 
+
+.news_box button{
+    /* font-size: 20px; */
+    color: #FFFAFA;
+}
 
 .triangle{
     position: absolute;
@@ -641,7 +647,6 @@ nav a{
     height: 0px;
     width: 0px;
 }
-
 
 .triangle .tab_border{
     text-align: center;
@@ -981,7 +986,7 @@ button:hover, .arrow:hover{
 
 /* ------------- news_box hover  ------------ */
 .news_box:hover{
-    opacity: .7;
+    -webkit-filter:brightness(.8);
 }
 
 /* ------------- breadcrumb hover  ------------ */

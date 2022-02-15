@@ -49,7 +49,6 @@ box.onclick = function show(){
   mark.classList.add("mark")
 }
 
-
 Xbtn.onclick  = function close(){
   popup.classList.add("noshow")
   mark.classList.remove("mark")
