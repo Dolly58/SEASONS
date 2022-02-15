@@ -5,7 +5,6 @@
 //     console.log("scrollX: " + window.scrollX);
 //     console.log("scrollY: " + window.scrollY);
 //   });
-
   
 /*********** 單品頁展開收合***********/
 $(document).ready(function(){
@@ -29,7 +28,7 @@ $(document).ready(function(){
 //   });
 // }
 
-/*********** 主選單顏色變化 ***********/
+/*********** 選單顏色變化 ***********/
 $(window).scroll(function(){
   if ( $(this).scrollTop() > 395) {
     $('.nav_top').addClass('scroll');
@@ -43,3 +42,7 @@ $(window).scroll(function(){
     $('.logo_black').css("display","none")
  }
 });
+
+
+
+
