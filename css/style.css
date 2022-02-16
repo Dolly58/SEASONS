@@ -105,9 +105,13 @@ a{
 
 
 /* -------------主選單(上排固定) ------------- */
+.nav_top{
+    padding-top: 10px;
+}
+
 .nav_top ul li img{
+    padding-left: 30px;
     float: left;
-    width: 160px;
     height: 30px;
     margin:7px 0;
 }
@@ -174,9 +178,11 @@ nav a{
     color: #292421;
 }
 .bg_color{
-    /* background-color: #FFFAFA; */
-    background-image: url(/pic/nav_2.png);
+    background-color: #FFFAFA;
+    border-bottom:1px solid #EFEBEB;
+    /* background-image: url(/pic/nav_2.png); */
 }
+
 /* ------------- 主選單(左側固定) ------------- */
 .nav_left a{
     writing-mode: vertical-rl;
@@ -195,13 +201,23 @@ nav a{
 }
 /* -------------漢堡 ------------- */
 .nav_hamburger{
-    float: right;
-    padding-right: 36px;
-    margin:0 auto;
+    position: absolute;
+    top: 6px;
+    right:17px;
+    z-index: 4;
+    position: fixed;
 
-    /* display: none; */
-
+    display: none;
 } 
+
+@media (max-width:767.98px){
+    .nav_hamburger{
+        display: block;
+    }
+    .nav_top{
+        display: none;
+    }
+}
 
 /* ------------- 主選單(右側固定) ------------- */
 .nav_right{
