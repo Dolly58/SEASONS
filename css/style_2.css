@@ -1,0 +1,425 @@
+
+/* ------------- 帳篷單品 ------------- */
+
+.camping_1 h2, .camping_1 p,.camping_2 h2, .camping_2 p,.camping_3 h2, .camping_3 p{
+    text-align: left;
+}
+
+.camping_text{
+    margin-top: 10px;
+}
+
+.camping_1 img, .camping_2 img, .camping_3 img{
+    margin-right: 10px;
+}
+
+.camping_1 ul, .camping_2 ul, .camping_3 ul{
+    display: flex;
+    overflow: hidden;
+}
+
+.camping_text p{
+    letter-spacing: .4em;
+    line-height : 2;
+}
+
+
+.camping_1>p, .camping_>p, .camping_3>p{
+    margin-bottom: 20px;
+}
+
+.showcontent {
+    display: none;
+}
+
+.hidetogglebtn{
+    display: block;
+
+}
+
+.camping_text_show button, .camping_text_show p{
+    display: inline;
+}
+
+.camping_text_show button{
+    font-size: 18px;
+    /* color: #191F45; */
+}
+
+/* ------------- 最新消息_選單 ------------- */
+.news_title{
+    margin-bottom: 50px;
+    padding: 50px 100px 0 100px;
+}
+
+.news_title h2{
+    letter-spacing: .4em;
+}
+
+.news_title ul {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.news_title ul li{
+    width: 200px;
+    display: block;
+    border-bottom: 1px solid #FFFAFA;
+}
+
+.news_title h4{
+    margin-bottom: 10px;
+}
+/* ------------- 最新消息_box ------------- */
+.news_main{
+
+    padding: 0 100px;
+    overflow: hidden;
+    margin-bottom: 150px;
+
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.news_box img{
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 300px;
+}
+
+.news_box{
+    width: 300px;
+    height: 300px;
+    background-color: #191F45;
+    margin: 0 15px;
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.news_box p{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    letter-spacing: .1em;
+}
+
+.news_box button{
+    /* font-size: 20px; */
+    color: #FFFAFA;
+}
+
+.triangle{
+    position: absolute;
+    left: 270px;
+    top: 0px;
+    border-color: #F7C242 #F7C242 transparent #F7C242;
+    border-style: solid solid solid solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+}
+
+.triangle .tab_border{
+    text-align: center;
+    line-height: 40px;
+    color: #191F45;
+    font-size: 5px;
+    line-height: 15px;
+    
+    position: absolute;
+    left: -13px;
+    top: -13px;
+}
+
+/* ------------- 最新消息_視窗 ------------- */
+.mark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .8;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+}
+
+.windows {
+    width: 850px;
+    height: 500px;
+    /* background-color:#FFFAFA; */
+    background-color:#EFEBEB;
+    
+    position: fixed;
+    top: 50%;
+     left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+
+    display: flex;
+    align-items:start;
+    letter-spacing:.2em;
+}
+
+.windows button{
+    padding: 15px;
+    font-size: 12px;
+}
+
+.windows_text{
+    width: 630px;
+    height: 430px;
+    margin: 100px 0 30px 30px;
+}
+
+.windows_bn{
+    height: 500px;
+    margin-left: 40px;
+    overflow: hidden;
+}
+
+.windows_bn img{
+    width: 320px;
+}
+.windows_text h2{
+    display: inline;
+    border-bottom: 1.5px solid #ADAAA5;
+}
+
+.windows_text>p{
+    font-size: 10px;
+    margin: 5px 0 50px 0;
+}
+
+.windows_text p:nth-child(3){
+    overflow-y: scroll;
+    height: 250px;
+}
+
+.show{
+    display: block;
+}
+
+.noshow{
+    display: none;
+}
+
+/* ------------- 關於我們_四季 ------------- */
+.about img{
+    height: 30px;
+    margin: 20px auto;
+    display: block;
+}
+
+
+.about ul{
+    height: 500px;
+    margin: 0 auto;
+    outline: 5px solid white;
+
+    display: flex;
+}
+
+.about li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+}
+
+.about_pic01 {
+    background-image: url(../pic/about/pic_01.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about_pic02 {
+    background-image: url(../pic/about/pic_02.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about_pic03{
+    background-image: url(../pic/about/pic_03.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about_pic04 {
+    background-image: url(../pic/about/pic_04.jpg);
+    background-position: center;
+    flex-grow: 2;
+}
+
+.about ul li:hover{
+    flex-grow: 3;
+}
+
+/* ------------- 營區地圖_地圖 ------------- */
+
+.campmap_pic{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../pic/campmap/map_cut.png);
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.campmap i {
+    color: #191F45;
+    position: absolute;
+    font-size: 36px;
+
+    animation:icon_move 2s infinite;
+}
+
+.campmap .icon1{
+    top: 70px;
+    left: 470px;
+    
+}
+
+.campmap .icon2 {
+    top: 110px;
+    left: 553px;
+}
+
+.campmap .icon3 {
+    top: 205px;
+    left: 400px;
+}
+
+.campmap .icon4 {
+    top: 183px;
+    left: 330px;
+}
+
+.campmap .icon5 {
+    top: 65px;
+    left: 390px;
+}
+
+.campmap .icon6 {
+    top: 330px;
+    left: 380px;
+}
+
+.campmap .icon7 {
+    top: 250px;
+    left: 670px;
+}
+
+.campmap .icon8 {
+    top: 320px;
+    left: 650px;
+}
+
+@keyframes icon_move{
+	0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+	100% {transform: translate(0px, 0px);}
+}
+
+/* ------------- 營區地圖_設施 ------------- */
+.facillties_box{
+    width: 800px;
+    height: 300px;
+    background-color: #191F45;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    box-sizing: border-box;
+
+    position:relative;
+}
+
+
+.facillties_box_text {
+    float: right;
+    padding: 40px 30px;
+}
+
+.facillties_box_text h3, .facillties_box_text p ,.facillties_box_text a {
+    margin-bottom: 20px;
+    color: #FFFAFA;
+    letter-spacing: .2em;
+}
+
+.facillties_box_text a{
+    border:  1px solid #FFFAFA;
+}
+
+.facillties_box_text p {
+    margin-bottom: 50px;
+}
+
+.arrow {
+    display: block;
+    position: absolute;
+    border-style: solid solid solid solid;
+    border-width: 15px;
+    height: 0px;
+    width: 0px;
+}
+
+.left{
+    border-color: transparent #191F45 transparent transparent;
+    left: -55px;
+    top: 150px;
+}
+
+.right{
+    border-color: transparent transparent transparent #191F45;
+    left: 825px;
+    top: 150px;
+}
+/* ------------- campmap_pic_i hover  ------------ */
+.campmap_pic i:hover:before{
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    color: #FFFAFA;
+    font-size: 14px;
+    background: #191F45;
+    padding: 10px;
+    font-family: 'Noto Serif TC', serif, '微軟正黑體', 'Arial';
+    width: 100px;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+.campmap_pic .icon1:hover:before{
+    content: '自搭帳篷區';
+}
+
+.campmap_pic .icon2:hover:before{
+    content: '豪華帳篷';
+}
+
+.campmap_pic .icon3:hover:before{
+    content: '別墅小木屋';
+}
+
+.campmap_pic .icon4:hover:before{
+    content: '星空露營車';
+}
+
+.campmap_pic .icon5:hover:before{
+    content: '營火烤肉區';
+}
+
+.campmap_pic .icon6:hover:before{
+    content: '星空電影院';
+}
+
+.campmap_pic .icon7:hover:before{
+    content: '服務中心';
+}
+
+.campmap_pic .icon8:hover:before{
+    content: '停車場';
+}
