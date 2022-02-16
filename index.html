@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_2.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,12 +26,6 @@
         <h3>豪華露營．別墅木屋．戶外體驗</h3>
     </div>
 </div>
-<!----------- 漢堡 ------------>
-<button type="button" class="hamburger_icon">
-    <span class="-hr -top"></span>
-    <span class="-hr -middle"></span>
-    <span class="-hr -bottom"></span>
-  </button>
 
 <!----------- 上排選單 ------------>
 <div class="nav_top" id="nav_top">
@@ -40,6 +35,13 @@
         <a href="index.html"><li class="logo_black"><img src="./pic/logo4_black.svg"></a></li>
         </div>
         
+        <!----------- 漢堡 ------------>
+        <li><button class="nav_hamburger hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button></li>
+
         </a>
         <li><a class="font_white" href="#">線上預約</a></li>
         <li><a class="font_white" href="campmap.html">營區地圖</a></li>
@@ -186,7 +188,7 @@
   
   /*********** 主選單顏色變化 ***********/
 $(window).scroll(function(){
-  if ( $(this).scrollTop() > 700) {
+  if ( $(this).scrollTop() > 650) {
     $('.nav_top').addClass('scroll');
     $('.nav_top').addClass('bg_color');
     $('.logo_white').css("display","none");

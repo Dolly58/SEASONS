@@ -170,16 +170,13 @@ nav a{
     position: fixed;
     color: #292421;
 } */
-
 .scroll a {
     color: #292421;
 }
-
 .bg_color{
     /* background-color: #FFFAFA; */
     background-image: url(/pic/nav_2.png);
 }
-
 /* ------------- 主選單(左側固定) ------------- */
 .nav_left a{
     writing-mode: vertical-rl;
@@ -196,7 +193,15 @@ nav a{
 
     z-index: 1;
 }
+/* -------------漢堡 ------------- */
+.nav_hamburger{
+    float: right;
+    padding-right: 36px;
+    margin:0 auto;
 
+    /* display: none; */
+
+} 
 
 /* ------------- 主選單(右側固定) ------------- */
 .nav_right{
@@ -598,9 +603,9 @@ ul li .font_white:hover, footer a:hover{
 }
 
 /* ------------- button hover  ------------- */
-button:hover, .arrow:hover{
+/* button:hover, .arrow:hover{
     transform: scale(1.2);
-}
+} */
 
 /* ------------- news_text hover  ------------ */
 .news_title  li:hover{
