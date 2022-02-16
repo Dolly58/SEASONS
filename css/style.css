@@ -264,11 +264,15 @@ nav a{
 
 /* ------------- 首頁_大b壓字------------- */
 .index_banner{
+    width: 100%;
     display: block;
     overflow: hidden;
     position: relative;
 } 
 
+.index_banner img{
+    width: 100%;
+}
 
 .index_banner_text h2, .index_banner_text h3 {
     /* writing-mode: vertical-lr; */
