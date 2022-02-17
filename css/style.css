@@ -159,7 +159,7 @@ nav a{
 
 @media (max-width:767.98px){
     .nav_top{
-        display: block;
+        display: none;
     }
 }
 /* ------------- 選單滾動色彩 ------------- */
