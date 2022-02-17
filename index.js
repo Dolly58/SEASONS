@@ -22,42 +22,33 @@ $(document).ready(function(){
 //   });
 // }
 
-
-/*********** 選單顏色變化 ***********/
-$(window).scroll(function(){
-  if ( $(this).scrollTop() > 395) {
-    $('.nav_top').addClass('scroll');
-    $('.nav_top').addClass('bg_color');
-    $('.logo_white').css("display","none");
-    $('.logo_black').css("display","block")
-  } else {
-    $('.nav_top').removeClass('scroll');
-    $('.nav_top').removeClass('bg_color');
-    $('.logo_white').css("display","block");
-    $('.logo_black').css("display","none")
- }
-});
+/*********** 手機版選單 ***********/
+// $(document).ready(function(){
+//   $(".nav_hamburger").click(function(){
+//   $(this).next(".nav_main").slideToggle();
+//   });
+// });
 
 /*********** 最新消息彈窗 ***********/
-let popup = document.getElementsByClassName('windows')[0];
-let mark = document.getElementsByClassName('news_bg')[0];
-let Xbtn = document.getElementById('close');
-let box = document.getElementById('box');
+// let popup = document.getElementsByClassName('windows')[0];
+// let mask = document.getElementsByClassName('news_bg')[0];
+// let Xbtn = document.getElementById('close');
+// let box = document.getElementById('box');
 
-box.onclick = function show(){
-  popup.classList.remove("noshow")
-  mark.classList.add("mark")
-}
+// box.onclick = function show(){
+//   popup.classList.remove("noshow")
+//   mask.classList.add("mask")
+// }
 
-Xbtn.onclick  = function close(){
-  popup.classList.add("noshow")
-  mark.classList.remove("mark")
-}
+// Xbtn.onclick  = function close(){
+//   popup.classList.add("noshow")
+//   mask.classList.remove("mask")
+// }
 
-mark.onclick  = function close(){
-  popup.classList.add("noshow")
-  mark.classList.remove("mark")
-}
+// mask.onclick  = function close(){
+//   popup.classList.add("noshow")
+//   mask.classList.remove("mask")
+// }
 
 
 /*********** 漢堡 ***********/
@@ -70,12 +61,22 @@ mark.onclick  = function close(){
 
 // });
 
-// JavaScript 版本
-document.addEventListener("DOMContentLoaded", function(){
+// // JavaScript 版本
+// document.addEventListener("DOMContentLoaded", function(){
   
-  var btn_hamburger = document.getElementsByClassName("hamburger")[0];
-  btn_hamburger.addEventListener("click", function(){
-    this.classList.toggle("is-active");
+//   var btn_hamburger = document.getElementsByClassName("hamburger")[0];
+//   btn_hamburger.addEventListener("click", function(){
+//     this.classList.toggle("is-active");
+//   });
+  
+// });
+
+// jQuery 版本
+$(function(){
+  
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $(".nav_main").slideToggle();
+    $(".add").toggleClass("mask");
   });
-  
 });

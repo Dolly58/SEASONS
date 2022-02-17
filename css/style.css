@@ -113,6 +113,9 @@ a{
     padding-left: 30px;
     float: left;
     height: 30px;
+
+}
+.nav_top ul li img{
     margin:7px 0;
 }
 
@@ -127,22 +130,6 @@ a{
     width: 100%;
     display: none;
 }
-
-/* .nav_top ul{
-    height: 50px;
-    margin: 0 auto;
-    line-height: 50px;
-    top:0;
-    left:0;
-    right: 0;
-    margin: a;
-    display: inline;
-    position: absolute;
-
-    /* background-color: #191F45 ;
-    position: fixed;
-    z-index: 1; 
-} */
 
 .nav_top ul li .font_white{
     float: right;
@@ -167,7 +154,13 @@ nav a{
     right: 0;
     margin: auto;
     position: fixed;
-    z-index: 99;
+    z-index: 5;
+}
+
+@media (max-width:767.98px){
+    .nav_top{
+        display: block;
+    }
 }
 /* ------------- 選單滾動色彩 ------------- */
 /* .scroll {
@@ -181,6 +174,86 @@ nav a{
     background-color: #FFFAFA;
     border-bottom:1px solid #EFEBEB;
     /* background-image: url(/pic/nav_2.png); */
+}
+
+/* -------------手機版選單 ------------- */
+.mobile_nav{
+    width: 100%;
+    height: 50px;
+    background-color: #FFFAFA;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:100;
+    position: fixed;
+
+    display: none;
+}
+
+.mobile_logo img{
+    padding-top: 10px;
+    height: 30px;
+    padding-right: 75px;
+}
+
+.mobile_logo{
+    /* padding-right: 75px; */
+    display: flex;
+    justify-content: center;
+}
+
+.nav_main{
+    height: 50%;
+    width: 100%;
+    background-color: #EFEBEB;
+    position: fixed;
+    top:50px;
+    left: 0;
+    z-index: 101;
+
+    display: none;
+}
+
+.nav_main p{
+    letter-spacing: .4em;
+    text-align: center;
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.nav_main h3::before{
+    content: "";
+    display: inline-block;
+    border-bottom: 1px solid #ADAAA5;
+
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%);
+    width: 60%;
+}
+
+.nav_main ul{
+    margin-top: 20px;
+}
+
+
+.nav_hamburger{
+    float: left;
+    margin: 0 auto;
+} 
+
+
+@media (max-width:767.98px){
+    .mobile_nav{
+        display: block;
+    }
+
+    /* .nav_main{
+        display: block;
+    } */
 }
 
 /* ------------- 主選單(左側固定) ------------- */
@@ -199,26 +272,6 @@ nav a{
 
     z-index: 1;
 }
-/* -------------漢堡 ------------- */
-.nav_hamburger{
-    position: absolute;
-    top: 6px;
-    right:17px;
-    z-index: 4;
-    position: fixed;
-
-    display: none;
-} 
-
-@media (max-width:767.98px){
-    .nav_hamburger{
-        display: block;
-    }
-    .nav_top{
-        display: none;
-    }
-}
-
 /* ------------- 主選單(右側固定) ------------- */
 .nav_right{
     display: inline-flex;
@@ -377,7 +430,9 @@ nav a{
     letter-spacing: .4em;
 }
 
-
+@media (max-width:767.98px){
+    
+}
 /* ------------- 首頁_區塊三_木屋 ------------- */
 
 .wrapper_3{
