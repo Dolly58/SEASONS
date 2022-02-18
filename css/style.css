@@ -16,6 +16,11 @@ h4{
     color: #433E3B;
 }
 
+h5{
+    font-size:16px;
+    color: #433E3B;
+}
+
 p{
     font-size:14px;
     color: #433E3B;
@@ -113,8 +118,8 @@ a{
     padding-left: 30px;
     float: left;
     height: 30px;
-
 }
+
 .nav_top ul li img{
     margin:7px 0;
 }
@@ -204,7 +209,7 @@ nav a{
     justify-content: center;
 }
 
-.nav_main_title h4{
+.nav_main_title h5{
     letter-spacing: .4em;
     margin-left: 20px;
     margin-top: 20px;
@@ -225,7 +230,7 @@ nav a{
 
 .nav_main{
     /* height: 50%; */
-    width: 100vh;
+    width: 100%;
     background-color: #EFEBEB;
     position: fixed;
     top:50px;
@@ -234,6 +239,7 @@ nav a{
 
     display: none;
     padding: 0 20px 10px 20px;
+    box-sizing: border-box;
 }
 
 
