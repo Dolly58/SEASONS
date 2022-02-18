@@ -157,11 +157,12 @@ nav a{
     z-index: 5;
 }
 
-@media (max-width:767.98px){
-    .nav_top{
+@media (max-width:575.98px){
+    #nav_top{
         display: none;
     }
 }
+
 /* ------------- 選單滾動色彩 ------------- */
 /* .scroll {
     position: fixed;
@@ -194,7 +195,7 @@ nav a{
 .mobile_logo img{
     padding-top: 10px;
     height: 30px;
-    padding-right: 75px;
+    padding-right: 52px;
 }
 
 .mobile_logo{
@@ -203,40 +204,54 @@ nav a{
     justify-content: center;
 }
 
+.nav_main_title h4{
+    letter-spacing: .4em;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* position: relative; */
+}
+
+/* .nav_main_title h4::after{
+    content: "";
+    border-bottom: 0.5px solid rgba(41, 36, 33, 50%);
+
+    position: absolute;
+    left: 0px;
+    right: -95%;
+    bottom: -10px;
+    width:95%;
+}  */
+
 .nav_main{
-    height: 50%;
+    /* height: 50%; */
     width: 100%;
     background-color: #EFEBEB;
+    /* border-top:1px solid #292421; */
     position: fixed;
     top:50px;
     left: 0;
     z-index: 101;
 
     display: none;
+    padding: 0 20px 10px 20px;
 }
 
-.nav_main p{
+
+.nav_main_list li p{
+    display: inline;
     letter-spacing: .4em;
-    text-align: center;
-    margin-bottom: 20px;
-
-    position: relative;
+    /* margin-left: 73px; */
 }
 
-.nav_main h3::before{
-    content: "";
-    display: inline-block;
-    border-bottom: 1px solid #ADAAA5;
-
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    width: 60%;
+.nav_main_list li{
+    margin-bottom: 13px;
+    text-align: center;
 }
 
 .nav_main ul{
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -245,8 +260,31 @@ nav a{
     margin: 0 auto;
 } 
 
+.nav_icon {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    
 
-@media (max-width:767.98px){
+    position: relative;
+}
+
+.line{
+    width: 100%;
+    height: .5px;
+    padding: 0px 95%;
+    background-color: rgba(41, 36, 33, 50%);
+}
+
+
+.nav_icon a{
+    font-size: 19px;
+    margin: 0 auto;
+    letter-spacing: 7px;
+    color: #292421;
+}
+
+@media (max-width:575.98px){
     .mobile_nav{
         display: block;
     }
@@ -254,6 +292,16 @@ nav a{
     /* .nav_main{
         display: block;
     } */
+}
+
+@media (min-width:767.98px){
+    .nav_main{
+        display: none !important ;
+    }
+
+    .mask{
+        display: none !important ;
+    }
 }
 
 /* ------------- 主選單(左側固定) ------------- */
@@ -318,7 +366,6 @@ nav a{
     float: right;
     margin-bottom: 17px;
 }
-
 
 /* ------------- 首頁_區塊間距與顏色------------- */
 .wrapper_1, .wrapper_2, .wrapper_3{
@@ -430,7 +477,7 @@ nav a{
     letter-spacing: .4em;
 }
 
-@media (max-width:767.98px){
+@media (max-width:575.98px){
     
 }
 /* ------------- 首頁_區塊三_木屋 ------------- */
