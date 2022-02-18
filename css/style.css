@@ -227,7 +227,6 @@ nav a{
     /* height: 50%; */
     width: 100vh;
     background-color: #EFEBEB;
-    /* border-top:1px solid #292421; */
     position: fixed;
     top:50px;
     left: 0;
@@ -495,10 +494,7 @@ nav a{
     width: 300px;
     margin-bottom: 70px;
     letter-spacing: .4em;
-}
 
-@media (max-width:575.98px){
-    
 }
 /* ------------- 首頁_區塊三_木屋 ------------- */
 
