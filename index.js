@@ -77,7 +77,7 @@ $(function(){
   $("button.hamburger").on("click", function(){
     $(this).toggleClass("is-active");
     $(".nav_main").slideToggle();
-    $(".add").toggleClass("mask");
+    $(".add").toggleClass("mask_index");
   });
   
 

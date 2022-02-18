@@ -225,7 +225,7 @@ nav a{
 
 .nav_main{
     /* height: 50%; */
-    width: 100%;
+    width: 100vh;
     background-color: #EFEBEB;
     /* border-top:1px solid #292421; */
     position: fixed;
@@ -239,7 +239,6 @@ nav a{
 
 
 .nav_main_list li p{
-    display: inline;
     letter-spacing: .4em;
     /* margin-left: 73px; */
 }
@@ -272,7 +271,6 @@ nav a{
 .line{
     width: 100%;
     height: .5px;
-    padding: 0px 95%;
     background-color: rgba(41, 36, 33, 50%);
 }
 
@@ -282,6 +280,17 @@ nav a{
     margin: 0 auto;
     letter-spacing: 7px;
     color: #292421;
+}
+
+.mask_index{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: .8;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width:575.98px){
@@ -294,12 +303,12 @@ nav a{
     } */
 }
 
-@media (min-width:767.98px){
+@media (min-width:575.98px){
     .nav_main{
         display: none !important ;
     }
 
-    .mask{
+    .mask_index{
         display: none !important ;
     }
 }
@@ -365,6 +374,17 @@ nav a{
     color:#292421;
     float: right;
     margin-bottom: 17px;
+}
+
+
+@media (max-width:575.98px){
+    .nav_right{
+        display: none;
+    }
+
+    .nav_left{
+        display: none;
+    }
 }
 
 /* ------------- 首頁_區塊間距與顏色------------- */
