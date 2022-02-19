@@ -31,6 +31,22 @@ p{
     color: #FFFAFA;
 }
 
+@media (max-width:575.98px){
+    h2{
+        font-size: 28px;
+    }
+
+    h3{
+        font-size:18px;
+    }
+
+    h4{
+        font-size:16px;
+        color: #433E3B;
+    }
+}
+
+
 /******** 按鈕 ********/
 .btn1{
     font-size:14px;
@@ -188,6 +204,7 @@ nav a{
     width: 100%;
     height: 50px;
     background-color: #FFFAFA;
+    border-bottom: .5px solid #EFEBEB;
 
     position: absolute;
     top: 0;
@@ -409,6 +426,20 @@ nav a{
     letter-spacing: .4em;
 }
 
+@media (max-width:575.98px){
+    .wrapper_1{
+        padding: 50px 30px
+    }
+
+    .wrapper_2 img{
+        margin: 0;
+    }
+
+    .wrapper_2 .text{
+        margin:0;
+    }
+}
+
 /* ------------- 首頁_大b壓字------------- */
 .index_banner{
     width: 100%;
@@ -422,11 +453,11 @@ nav a{
 }
 
 .index_banner_text{
-    width: 885px;
+    width: 70%;
     height: 150px;
 
     position: absolute;
-    top: 30%;
+    top: 11%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -455,9 +486,6 @@ nav a{
     100%{opacity:1;}
 }
 
-.index_banner_text{
-    width: 70%;
-}
 
 
 /* .index_banner_text h2, .index_banner_text h3 {
@@ -481,7 +509,7 @@ nav a{
 @media (max-width:575.98px){
     .index_banner{
         width: 100%;
-        height: 700px;
+        height: 550px;
 
         position: relative;
     }
@@ -515,6 +543,13 @@ nav a{
     line-height:2;
 }
 
+@media (max-width:575.98px){
+    .wrapper_1 .banner_circle{
+        width: 300px;
+    }
+
+}
+
 /* ------------- 首頁_區塊二(三)_豪華帳棚 ------------- */
 .wrapper_2_bg, .wrapper_3_bg{
     width: 100%;
@@ -529,27 +564,20 @@ nav a{
     box-sizing: border-box;
     display: flex;
     overflow: hidden;
-    /* width: 100% */
 
     width: 1200px;
     margin: 0 auto;
 }
 
-.wrapper_2 img , .wrapper_3 img{
-    width: 30%;
-    margin: 0 auto;
-}
-.wrapper_2 img{
-    margin-left: 130px;
-}
 
-.wrapper_2 .text, .wrapper_3 .text{
+.wrapper_2 .text{
     text-align:left;
-    margin: 100px 50px;
+    /* margin: 50px 90px; */
 }
 
 .wrapper_2 .text{
-    margin-right: 150px;
+    margin-left: 120px;
+    margin-top: 50px;
 }
 
 .wrapper_2 h3, .wrapper_3 h3{
@@ -560,19 +588,67 @@ nav a{
 }
 
 .wrapper_2 p, .wrapper_3 p{
-    width: 300px;
     margin-bottom: 70px;
     letter-spacing: .4em;
+
+}
+
+.wrapper_2_pic, .wrapper_3_pic{
+    width: 450px;
+    height: 387px;
+}
+
+.wrapper_2_pic img, .wrapper_3_pic img{
+    width: 450px;
+    margin: 0 auto;
+    display: block;
+}
+
+.slick-prev::before {
+   content:"〈" ;
+   color: #ADAAA5;
+}
+
+.slick-next:before{
+    content:"〉" ;
+    color: #ADAAA5;
+}
+
+.slick-dots li button:before{
+    color: #ADAAA5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #433E3B;
+}
+
+@media (max-width:575.98px){
+    .wrapper_2{
+        width: 100%;
+        padding: 50px 30px; 
+    }
+
+    .wrapper_2 img{
+        /* margin: 0;
+        width: 200px;
+        margin: 0 auto; */
+    }
+
+    .wrapper_2 .text{
+        /* width: 200px;
+    } */
 
 }
 /* ------------- 首頁_區塊三_木屋 ------------- */
 
 .wrapper_3{
+    order: 2 ;
     background-color: #FFFAFA;
+    display: flex;
 }
 
 .wrapper_3 .text{
-    order:-1 ;
+    order: 1 ;
     margin-left: 130px;
 }
 
