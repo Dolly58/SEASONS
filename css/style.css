@@ -695,7 +695,7 @@ nav a{
 }
 
 /* ------------- 首頁_區塊四_圖_動畫 ------------- */
-
+/* 
 .banner_nature{
     animation: picmove 30s linear infinite forwards; 
 }
@@ -708,7 +708,9 @@ nav a{
 .banner_nature:hover { 
     animation-play-state: paused; 
 }
+ */
 
+ 
 
 /* ------------- 內容間距 ------------- */
 .products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap, .camp_facillties{

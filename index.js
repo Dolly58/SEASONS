@@ -93,3 +93,41 @@ $('.slick_fade').slick({
   cssEase: 'linear'
 });
 });
+
+//圖片自動播放
+/*
+window.onload=function(){
+  var oDiv  =  document.getElementById('banner_nature');
+  var oUl = document.getElementsByClassName('banner_nature_ul')[0];
+  var Li = oUl.getElementsByTagName('li');//獲取ul下的所有li
+  oUl.innerHTML = oUl.innerHTML+oUl.innerHTML;//li下的內容進行想加
+  oUl.style.width = Li[0].offsetWidth*Li.length+'px';//ul的寬度等於每個li的寬度乘以所有li的長度
+  var speed = 2
+  
+  //主方法
+  function move(){
+    //如果左邊橫向滾動了長度一半之後,回到初始位置
+    
+    if(oUl.offsetLeft<-oUl.offsetWidth/speed){
+      oUl.style.left = '0'
+    }
+    //如果右邊橫向滾動的距離大於0 就讓他的位置回到一半
+    if(oUl.offsetLeft>0){
+      oUl.style.left = -oUl.offsetWidth/speed+'px';
+    }
+    //oUl.style.left = oUl.offsetLeft-2+'px';//進行左橫向滾動
+    oUl.style.left = oUl.offsetLeft+speed+'px';//進行右橫向滾動
+  }
+  //呼叫方法
+  var timer = setInterval(move,30)
+  //滑鼠指向的時候 暫停
+  oDiv.onmouseover=function(){
+    clearInterval(timer);
+  }	
+  //滑鼠離開之後 繼續滾動
+  oDiv.onmouseout=function(){
+     timer = setInterval(move,30)
+  }
+}
+*/
+
