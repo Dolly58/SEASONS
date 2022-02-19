@@ -128,6 +128,7 @@ a{
 /* -------------主選單(上排固定) ------------- */
 .nav_top{
     padding-top: 10px;
+    padding-right: 14px;
 }
 
 .nav_top ul li img{
@@ -136,9 +137,9 @@ a{
     height: 30px;
 }
 
-.nav_top ul li img{
+/* .nav_top ul li img{
     margin:7px 0;
-}
+} */
 
 .logo_white{
     margin: 0 auto;
@@ -422,7 +423,7 @@ nav a{
     background-color: #EFEBEB;
 }
 
-.wrapper_1 h2 , .wrapper_1 h3 , .icon , .wrapper_4 h2  {
+.wrapper_1 h2 , .wrapper_1 h3 , .icon , .wrapper_4 h2 {
     text-align:center;
     margin-bottom: 40px;
     letter-spacing: .4em;
@@ -456,11 +457,11 @@ nav a{
 
 .index_banner_text{
     width: 60%;
-    opacity: .9;
+    /* opacity: .9; */
     height: 150px;
 
     position: absolute;
-    top: 6.5%;
+    top:200px;
     left: 50%;
     transform: translateX(-50%);
 
@@ -575,10 +576,6 @@ nav a{
 
 .wrapper_2 .text{
     text-align:left;
-    /* margin: 50px 90px; */
-}
-
-.wrapper_2 .text{
     margin-left: 120px;
     margin-top: 50px;
 }
@@ -630,28 +627,21 @@ nav a{
         width: 100%;
         padding: 50px 30px; 
     }
-
-    .wrapper_2 img{
-        /* margin: 0;
-        width: 200px;
-        margin: 0 auto; */
-    }
-
-    .wrapper_2 .text{
-        /* width: 200px;
-    } */
-
 }
-/* ------------- 首頁_區塊三_木屋 ------------- */
+    /*  ------------- 首頁_區塊三_木屋 ------------- */
 
 .wrapper_3{
     background-color: #FFFAFA;
 }
 
-.text{
-    /* order: 1 ; */
+.wrapper_3 {
     margin-top: 50px;
+}
 
+.wrapper3_content{
+    margin-top: 50px;
+    width: 450px;
+    margin-right: 80px;
 }
 
 .wrapper_3 img{
