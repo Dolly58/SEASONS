@@ -198,7 +198,7 @@ nav a{
     /* background-image: url(/pic/nav_2.png); */
 }
 
-/* -------------手機版選單 ------------- */
+/* -------------手機版選單_上方固定 ------------- */
 .mobile_nav{
     /* padding: 10px 5px; */
     width: 100%;
@@ -228,6 +228,7 @@ nav a{
     justify-content: center;
 }
 
+/* -------------手機版選單內容 ------------- */
 .nav_main_title h5{
     letter-spacing: .4em;
     margin-left: 20px;
@@ -277,11 +278,6 @@ nav a{
     margin-bottom: 20px;
 }
 
-
-.hamburger{
-    float: left;
-} 
-
 .nav_icon {
     text-align: center;
     margin-bottom: 20px;
@@ -315,6 +311,12 @@ nav a{
     width: 100%;
     height: 100%;
 }
+
+/* -------------漢堡 ------------- */
+.hamburger{
+    float: left;
+} 
+
 
 @media (max-width:575.98px){
     .mobile_nav{
@@ -453,11 +455,12 @@ nav a{
 }
 
 .index_banner_text{
-    width: 70%;
+    width: 60%;
+    opacity: .9;
     height: 150px;
 
     position: absolute;
-    top: 11%;
+    top: 6.5%;
     left: 50%;
     transform: translateX(-50%);
 
@@ -642,14 +645,13 @@ nav a{
 /* ------------- 首頁_區塊三_木屋 ------------- */
 
 .wrapper_3{
-    order: 2 ;
     background-color: #FFFAFA;
-    display: flex;
 }
 
-.wrapper_3 .text{
-    order: 1 ;
-    margin-left: 130px;
+.text{
+    /* order: 1 ; */
+    margin-top: 50px;
+
 }
 
 .wrapper_3 img{
