@@ -895,3 +895,7 @@ ul li .font_white:hover, footer a:hover{
     color: #292421;
     border-bottom: 1px solid #292421 ;
 }
+
+a:hover{
+    color: #292421;
+}
