@@ -1,4 +1,19 @@
 "use strict"
+  /*********** 主選單顏色變化 ***********/
+  $(window).scroll(function(){
+    if ( $(this).scrollTop() > 350) {
+      $('.nav_top').addClass('scroll');
+      $('.nav_top').addClass('bg_color');
+      $('.logo_white').css("display","none");
+      $('.logo_black').css("display","block")
+    } else {
+      $('.nav_top').removeClass('scroll');
+      $('.nav_top').removeClass('bg_color');
+      $('.logo_white').css("display","block");
+      $('.logo_black').css("display","none")
+   }
+  });
+
 /*********** 漢堡 ***********/
 // // jQuery 版本
 // $(function(){
@@ -19,17 +34,15 @@
   
 // });
 
-// jQuery 版本
-$(function(){
+// 手機版選單+漢堡(jQuery 版本)
+// $(function(){
   
-  $("button.hamburger").on("click", function(){
-    $(this).toggleClass("is-active");
-    $(".nav_main").slideToggle();
-    $(".add").toggleClass("mask_index");
-  });
-  
-
-});
+//   $("button.hamburger").on("click", function(){
+//     $(this).toggleClass("is-active");
+//     $(".nav_main").slideToggle();
+//     $(".add").toggleClass("mask_index");
+//   });
+// });
 
 // // 首頁輪播
 // $(document).ready(function(){
@@ -74,22 +87,22 @@ $(document).ready(function(){
 // });
 
 /*********** 最新消息彈窗 ***********/
-let popup = document.getElementsByClassName('windows')[0];
-let mask = document.getElementsByClassName('news_bg')[0];
-let Xbtn = document.getElementById('close');
-let box = document.getElementById('box');
+// let popup = document.getElementsByClassName('windows')[0];
+// let mask = document.getElementsByClassName('news_bg')[0];
+// let Xbtn = document.getElementById('close');
+// let box = document.getElementById('box');
 
-box.onclick = function show(){
-  popup.classList.remove("noshow")
-  mask.classList.add("mask")
-}
+// box.onclick = function show(){
+//   popup.classList.remove("noshow")
+//   mask.classList.add("mask")
+// }
 
-Xbtn.onclick  = function close(){
-  popup.classList.add("noshow")
-  mask.classList.remove("mask")
-}
+// Xbtn.onclick  = function close(){
+//   popup.classList.add("noshow")
+//   mask.classList.remove("mask")
+// }
 
-mask.onclick  = function close(){
-  popup.classList.add("noshow")
-  mask.classList.remove("mask")
-}
+// mask.onclick  = function close(){
+//   popup.classList.add("noshow")
+//   mask.classList.remove("mask")
+// }
