@@ -422,7 +422,7 @@ nav a{
     }
 
     .nav_right_top{
-        right: 15px;
+        right: 1.5%;
 
     }
 }
@@ -530,6 +530,7 @@ nav a{
         height: 550px;
 
         position: relative;
+        overflow: hidden;
     }
 
     .index_banner img{
@@ -651,7 +652,7 @@ nav a{
     }
 
     .wrapper_2_pic{
-        width: 200px;
+        width: 50%;
         margin: 0 auto;
     }
     .wrapper_2 .text{
@@ -723,7 +724,7 @@ nav a{
     }
 
     .wrapper_3_pic{
-        width: 200px;
+        width: 50%;
     }
     .wrapper3_content{
         margin-right: 20px;
@@ -990,10 +991,10 @@ footer{
 
 iframe{
     margin: 0 auto;
-    width: 500px;
+    width: 45%;
     height: 150px;
-    margin-left: 30px;
     flex-grow: 1;
+    margin-left: 10px;
     margin-bottom: 40px;
     margin: 0 auto;
 }
