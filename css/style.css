@@ -700,12 +700,7 @@ nav a{
 @keyframes picmove { 
     from { transform: translate(0); } 
     to { transform: translate(-1500px); } 
-}
-
-.banner_nature:hover { 
-    animation-play-state: paused; 
-}
- */
+}*/
 
     @-webkit-keyframes scroll {
     0% {
@@ -724,7 +719,7 @@ nav a{
     }
     100% {
     -webkit-transform: translateX(calc(-300px * 10));
-    transform: translateX(calc(-300px * 10));
+    transform: translateX(cac(-300px * 10));
     }
     }
     .slider_2 {
@@ -755,8 +750,8 @@ nav a{
     top: 0;
     }
     .slider_2 .slide-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 50s linear infinite;
+    animation: scroll 50s linear infinite;
     display: flex;
     width: calc(250px * 14);
     }
