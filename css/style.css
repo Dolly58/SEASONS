@@ -606,11 +606,13 @@ nav a{
 
 .slick-prev::before {
    content:"〈" ;
+   opacity: .5;
    color: #ADAAA5;
 }
 
 .slick-next:before{
     content:"〉" ;
+    opacity: .5;
     color: #ADAAA5;
 }
 
