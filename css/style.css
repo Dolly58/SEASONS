@@ -233,7 +233,7 @@ nav a{
     justify-content: center;
 }
 
-/* -------------手機版選單內容 ------------- */
+/* -------------手機版選單內容_上 ------------- */
 .nav_main_title h5{
     letter-spacing: .4em;
     margin-left: 20px;
@@ -241,17 +241,6 @@ nav a{
     margin-bottom: 10px;
     /* position: relative; */
 }
-
-/* .nav_main_title h4::after{
-    content: "";
-    border-bottom: 0.5px solid rgba(41, 36, 33, 50%);
-
-    position: absolute;
-    left: 0px;
-    right: -95%;
-    bottom: -10px;
-    width:95%;
-}  */
 
 .nav_main{
     /* height: 50%; */
@@ -267,7 +256,7 @@ nav a{
     box-sizing: border-box;
 }
 
-
+/* -------------手機版選單內容_下 ------------- */
 .nav_main_list li p{
     letter-spacing: .4em;
     /* margin-left: 73px; */
@@ -407,7 +396,7 @@ nav a{
 }
 
 
-@media (max-width:575.98px){
+@media (max-width:767.98px){
     .nav_right{
         display: none;
     }
@@ -480,7 +469,7 @@ nav a{
     width: 120%;
 }
 
-
+/* ------------- 首頁_大b壓字_動畫------------- */
 @keyframes fade-in{  
     0%{ opacity: 0;}
     100%{opacity:1;}
@@ -503,25 +492,6 @@ nav a{
 }
 
 
-
-/* .index_banner_text h2, .index_banner_text h3 {
-    color: #FFFAFA;
-    position: absolute;
-} */
-
-/* .index_banner_text h2:nth-child(1){
-    font-size: 50px;
-    left: 47%;
-    top: 30%;
-} */
-
-/* .index_banner_text h3{
-    font-size: 26px;
-    letter-spacing: .2em;
-    left: 37%;
-    top: 42%;
-}  */
-
 @media (max-width:575.98px){
     .index_banner{
         width: 100%;
@@ -542,13 +512,74 @@ nav a{
     }
 
     .index_banner_text{
-        top: 6%;
+        top: 5%;
         left: 42%;
         transform: translateX(-42%);
     }
 
 
 }
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .index_banner{
+        width: 100%;
+        height: 550px;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .index_banner img{
+        width: 1100px;
+        display: block;
+        
+        position: absolute;
+        left:49%;
+        margin: auto;
+        transform:translateX(-49%);
+    }
+
+    .index_banner_text{
+        top: 5%;
+        left: 42%;
+        transform: translateX(-42%);
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .index_banner{
+        width: 100%;
+        height: 550px;
+
+        position: relative;
+        overflow: hidden;
+    }
+
+    .index_banner img{
+        width: 1100px;
+        display: block;
+        
+        position: absolute;
+        left:47%;
+        margin: auto;
+        transform:translateX(-47%);
+    }
+
+    .index_banner_text{
+        top: 5%;
+        left: 42%;
+        transform: translateX(-42%);
+    }
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199.8px){
+    .index_banner_text {
+        top: 5%;
+    }
+
+}
+
 
 /* ------------- 首頁_區塊一_簡介------------- */
 .wrapper_1 .banner_circle{
@@ -618,6 +649,7 @@ nav a{
 
 .wrapper_2_pic img, .wrapper_3_pic img{
     width: 450px;
+    height: 382px;
     margin: 0 auto;
     display: block;
 }
@@ -626,14 +658,14 @@ nav a{
    content:"〈" ;
    opacity: .5;
    color: #ADAAA5;
-   /* display: none; */
+   display: none;
 }
 
 .slick-next:before{
     content:"〉" ;
     opacity: .5;
     color: #ADAAA5;
-    /* display: none; */
+    display: none;
 }
 
 .slick-dots li button:before{
@@ -644,57 +676,155 @@ nav a{
     color: #433E3B;
 }
 
+
+    
+/* ------------- 首頁_區塊二豪華帳棚RWD ------------- */
 @media (max-width:575.98px){
     .wrapper_2{
         width: 100%;
-        padding: 70px 30px; 
-
+        padding: 70px 30px;
+        flex-wrap:wrap;
+       overflow: hidden;
+        
     }
 
     .wrapper_2_pic{
-        width: 40%;
-        margin: 0 auto;
+        width: 100%;
     }
+
+    .wrapper_2_pic img{
+        height: 60%;
+    }
+
     .wrapper_2 .text{
-        margin-left: 20px;
+        width: 100%;
+        margin-left: 0px;
         margin-top: 0px;
     }
 
     .wrapper_2 p{
         line-height: ;
-        margin-bottom: 25px;
-    }
-
-    .slick-prev::before {
-        display: none;
-     }
-     
-     .slick-next:before{
-         display: none;
-     }
-     
-
-    .slick-dots{
-        bottom: 10px;
-        color: #FFFAFA;
-    }
-
-    .slick-dots li.slick-active button:before {
-        color: #FFFAFA;
+        margin-bottom: 30px;
     }
     
     .slick-dots li.slick-active button:before {
-        /* opacity: .75; */
         color: #FFFAFA;
     }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #FFFAFA;
+    }
+
     .slick-dots li button:before {
         color: #FFFAFA;
     }
 
+
+    .slick-dots {
+        bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .wrapper_2{
+        width: 100%;
+        padding: 70px 30px;
+        flex-wrap:wrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .wrapper_2_pic{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .wrapper_2 .text{
+        flex-grow:1;
+        width: 450px;
+        margin: 0;
+        padding: 0 15%;
+    }
+
+    .wrapper_2 p{
+        margin-bottom: 30px;
+    }
+
     .slick-dots li.slick-active button:before {
         color: #FFFAFA;
     }
 
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #FFFAFA;
+    }
+
+    .slick-dots li button:before {
+        color: #FFFAFA;
+    }
+
+
+    .slick-dots {
+        bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .wrapper_2{
+        width: 100%;
+    }
+
+    .wrapper_2 .text{
+        margin-left:30px;
+        margin-top: 0;
+    }
+
+    .wrapper_2 .text p{
+        margin-bottom: 40px;
+    }
+
+    .wrapper_2_pic{
+        width: 60%;
+    }
+
+    .wrapper_2_pic img{
+        height: 30%;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.8px){
+    .wrapper_2{
+        width: 100%;
+    }
+
+    .wrapper_2 .text{
+        margin-top: 30px;
+        margin-left:50px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.8px){ 
+    .wrapper_2{
+        width: 100%;
+    }
+
+    .wrapper_2 .text{
+        margin-left:100px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .wrapper_2{
+        width: 100%;
+    }
+    .wrapper_2 .text{
+        margin-left:100px;
+    }
 }
 
 /*  ------------- 首頁_區塊三_木屋 ------------- */
@@ -721,20 +851,129 @@ nav a{
     .wrapper_3{
         width: 100%;
         padding: 70px 30px; 
+        flex-wrap:wrap;
+        margin: 0%;
     }
 
     .wrapper_3_pic{
-        width: 40%;
-
+        order: -1;
+        width: 100%;
     }
+
     .wrapper3_content{
-        margin-right: 20px;
+        margin-right: 0;
         margin-top: 0;
     }
 
     .wrapper_3 p{
-        margin-bottom: 25px;
+        margin-bottom: 30px;
         margin-top: 0px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .wrapper_3{
+        width: 100%;
+        padding: 70px 30px;
+        flex-wrap:wrap;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .wrapper_3_pic{
+        width: 100%;
+        order: -1;
+        margin: 0 auto;
+    }
+
+    .wrapper_3 img{
+        margin: 0;
+        margin: 0 auto;
+    }
+
+    .wrapper3_content{
+        flex-grow:1;
+        width: 450px;
+        margin: 0;
+        padding: 0 15%;
+    }
+
+    .wrapper_3 p{
+        margin-bottom: 30px;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #FFFAFA;
+    }
+
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: #FFFAFA;
+    }
+
+    .slick-dots li button:before {
+        color: #FFFAFA;
+    }
+
+
+    .slick-dots {
+        bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .wrapper_3{
+        width: 100%;
+    }
+
+    .wrapper3_content{
+        margin-right:30px;
+        margin-top: 0;
+    }
+
+    .wrapper3_content p{
+        margin-bottom: 40px;
+    }
+
+    .wrapper_3_pic{
+        width: 60%;
+    }
+
+    .wrapper_3_pic img{
+        height: 30%;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.8px){
+    .wrapper_3{
+        width: 100%;
+    }
+
+    .wrapper3_content{
+        margin-top: 30px;
+        margin-right:50px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.8px){ 
+    .wrapper_3{
+        width: 100%;
+    }
+
+    .wrapper3_content{
+        margin-right:100px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .wrapper_3{
+        width: 100%;
+    }
+    .wrapper3_content {
+        margin-right:100px;
     }
 }
 
@@ -761,6 +1000,23 @@ nav a{
     padding: 50px 0 100px 0;
 }
 
+@media (max-width:575.98px){
+    .wrapper_4, .wrapper_5{
+        width: 100%;
+        padding: 70px 30px; 
+       overflow: hidden;
+       box-sizing: border-box;
+    }
+
+    .wrapper_4{
+        padding-bottom: 30px;
+    }
+
+    .wrapper_5{
+        padding: 0;
+        padding-bottom: 50px;
+    }
+}
 /* .banner_nature{
 
 
