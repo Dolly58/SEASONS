@@ -316,6 +316,30 @@ $(window).scroll(function(){
     $('.logo_black').css("display","none")
  }
 });
+/*********** 漢堡 ***********/
+// jQuery 版本
+$(function(){
+  
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $(".nav_main").slideToggle();
+    $(".add").toggleClass("mask_index");
+  });
+  
+
+});
+
+
+/*********** 首頁輪播 ***********/
+$(document).ready(function(){
+$('.slick_fade').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  fade: true,
+  cssEase: 'linear'
+});
+});
 
   </script>
 </body>
