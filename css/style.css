@@ -415,6 +415,11 @@ nav a{
     .nav_left{
         display: none;
     }
+
+    .nav_right_top{
+        right: 15px;
+
+    }
 }
 
 /* ------------- 首頁_區塊間距與顏色------------- */
@@ -533,7 +538,7 @@ nav a{
     }
 
     .index_banner_text{
-        width: 600px;
+        width: 100%;
     }
 
 
@@ -554,6 +559,9 @@ nav a{
 @media (max-width:575.98px){
     .wrapper_1 .banner_circle{
         width: 300px;
+    }
+    .wrapper_1{
+        padding: 70px 50px;
     }
 
 }
@@ -612,12 +620,14 @@ nav a{
    content:"〈" ;
    opacity: .5;
    color: #ADAAA5;
+   /* display: none; */
 }
 
 .slick-next:before{
     content:"〉" ;
     opacity: .5;
     color: #ADAAA5;
+    /* display: none; */
 }
 
 .slick-dots li button:before{
@@ -631,10 +641,57 @@ nav a{
 @media (max-width:575.98px){
     .wrapper_2{
         width: 100%;
-        padding: 50px 30px; 
+        padding: 70px 50px; 
+
     }
+
+    .wrapper_2_pic{
+        width: 220px;
+        margin: 0 auto;
+    }
+    .wrapper_2 .text{
+        margin-left: 35px;
+        margin-top: 0px;
+    }
+
+    .wrapper_2 p{
+        line-height: ;
+        margin-bottom: 65px;
+    }
+
+    .slick-prev::before {
+        display: none;
+     }
+     
+     .slick-next:before{
+         display: none;
+     }
+     
+
+    .slick-dots{
+        bottom: 10px;
+        color: #FFFAFA;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #FFFAFA;
+    }
+    
+    .slick-dots li.slick-active button:before {
+        /* opacity: .75; */
+        color: #FFFAFA;
+    }
+    .slick-dots li button:before {
+        color: #FFFAFA;
+    }
+
+    .slick-dots li.slick-active button:before {
+        color: #FFFAFA;
+    }
+
 }
-    /*  ------------- 首頁_區塊三_木屋 ------------- */
+
+/*  ------------- 首頁_區塊三_木屋 ------------- */
 
 .wrapper_3{
     background-color: #FFFAFA;
@@ -654,6 +711,25 @@ nav a{
     margin-right: 130px;
 }
 
+@media (max-width:575.98px){
+    .wrapper_3{
+        width: 100%;
+        padding: 70px 50px; 
+    }
+
+    .wrapper_3_pic{
+        width: 220px;
+    }
+    .wrapper3_content{
+        margin-top: 50px;
+        margin-right: 35px;
+    }
+
+    .wrapper_3 p{
+        line-height: ;
+        margin-bottom: 30px;
+    }
+}
 
 /* ------------- 首頁_區塊四_圖 ------------- */
 .wrapper_4{
@@ -694,6 +770,7 @@ nav a{
     width: 300px;
     margin-right: 10px;
 } */
+
 
 /* ------------- 首頁_區塊四_圖_動畫 ------------- */
 /* 
@@ -768,6 +845,17 @@ nav a{
     width: 300px;
     height: 300px;
     margin-right: 10px;
+}
+
+@media (max-width:575.98px){
+    .slider_2 .slide-track .auto img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .slider_2::before, .slider_2::after {
+        background: none;
+        }
 }
 
 /* ------------- 內容間距 ------------- */
