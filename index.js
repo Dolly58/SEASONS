@@ -84,16 +84,6 @@ $(function(){
 });
 
 // 圖片輪播
-// $(document).ready(function(){
-//   $('.slick_fade').slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 500,
-//     fade: true,
-//     cssEase: 'linear'
-//   });
-//   });
-
 $(document).ready(function(){
 $('.slick_fade').slick({
   dots: true,
@@ -106,6 +96,19 @@ $('.slick_fade').slick({
 
 
 //圖片自動播放
+
+
+
+// $(document).ready(function(){
+// $('.autoplay').slick({
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   autoplay: true,
+//   autoplaySpeed: 2000,
+// });
+// });
+
+
 // window.onload=function(){
 //   var oDiv  =  document.getElementById('banner_nature');
 //   var oUl = document.getElementsByClassName('banner_nature_ul')[0];

@@ -672,10 +672,8 @@ nav a{
     padding: 50px 0 100px 0;
 }
 
-.banner_nature{
-    /* display: flex;
-    justify-content: center; */
-    /* flex-wrap:wrap; */
+/* .banner_nature{
+
 
     margin: 0 auto;
     width: 100%;
@@ -684,15 +682,12 @@ nav a{
 .banner_nature ul{
     width: 100%;
     display: flex;
-    /* overflow: hidden; */
 }
 
 .banner_nature img{
     width: 300px;
     margin-right: 10px;
-    /* margin-bottom: 100px; */
-    /* margin-top: 50px; */
-}
+} */
 
 /* ------------- 首頁_區塊四_圖_動畫 ------------- */
 /* 
@@ -710,7 +705,69 @@ nav a{
 }
  */
 
- 
+    @-webkit-keyframes scroll {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+    }
+    }
+    @keyframes scroll {
+    0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+    transform: translateX(calc(-250px * 7));
+    }
+    }
+    .slider_2 {
+    background: pr;
+    /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    }
+    .slider_2::before, .slider_2::after {
+    background: linear-gradient(to right,#EFEBEB 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 300px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+    }
+    .slider_2::after {
+    right: 0;
+    top: 0;
+    -webkit-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    }
+    .slider_2::before {
+    left: 0;
+    top: 0;
+    }
+    .slider_2 .slide-track {
+    -webkit-animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+    }
+    .slider_2 .slide_infinite {
+    height: 300px;
+    width: 300px;
+    margin-right: 10px;
+    }
+.slider_2 .slide-track .slide img{
+    width: 300px;
+    height: 300px;
+    margin-right: 10px;
+}
 
 /* ------------- 內容間距 ------------- */
 .products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap, .camp_facillties{
