@@ -33,16 +33,21 @@ p{
 
 @media (max-width:575.98px){
     h2{
-        font-size: 28px;
+        font-size: 26px;
     }
 
     h3{
-        font-size:18px;
+        font-size:16px;
     }
 
     h4{
-        font-size:16px;
+        font-size:14px;
         color: #433E3B;
+    }
+
+    P{
+        font-size:12px;
+        color: #433E3B; 
     }
 }
 
@@ -650,13 +655,13 @@ nav a{
         margin: 0 auto;
     }
     .wrapper_2 .text{
-        margin-left: 35px;
+        margin-left: 20px;
         margin-top: 0px;
     }
 
     .wrapper_2 p{
         line-height: ;
-        margin-bottom: 63px;
+        margin-bottom: 25px;
     }
 
     .slick-prev::before {
@@ -721,13 +726,13 @@ nav a{
         width: 200px;
     }
     .wrapper3_content{
-        margin-right: 35px;
+        margin-right: 20px;
         margin-top: 0;
     }
 
     .wrapper_3 p{
-        margin-bottom: 55px;
-        margin-top: 55px;
+        margin-bottom: 25px;
+        margin-top: 0px;
     }
 }
 
