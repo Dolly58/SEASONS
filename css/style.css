@@ -641,12 +641,12 @@ nav a{
 @media (max-width:575.98px){
     .wrapper_2{
         width: 100%;
-        padding: 70px 50px; 
+        padding: 70px 30px; 
 
     }
 
     .wrapper_2_pic{
-        width: 220px;
+        width: 200px;
         margin: 0 auto;
     }
     .wrapper_2 .text{
@@ -656,7 +656,7 @@ nav a{
 
     .wrapper_2 p{
         line-height: ;
-        margin-bottom: 65px;
+        margin-bottom: 63px;
     }
 
     .slick-prev::before {
@@ -714,20 +714,20 @@ nav a{
 @media (max-width:575.98px){
     .wrapper_3{
         width: 100%;
-        padding: 70px 50px; 
+        padding: 70px 30px; 
     }
 
     .wrapper_3_pic{
-        width: 220px;
+        width: 200px;
     }
     .wrapper3_content{
-        margin-top: 50px;
         margin-right: 35px;
+        margin-top: 0;
     }
 
     .wrapper_3 p{
-        line-height: ;
-        margin-bottom: 30px;
+        margin-bottom: 55px;
+        margin-top: 55px;
     }
 }
 
