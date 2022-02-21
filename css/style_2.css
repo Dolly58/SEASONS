@@ -46,6 +46,59 @@
     /* color: #191F45; */
 }
 
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .news_title{
+        padding: 50px 50px 20px 50px;
+        margin-bottom: 50px;
+    }
+    
+    .news_title h4{
+        font-size: 16px;
+        letter-spacing: .2em;
+    }
+
+    .news_title h4:hover{
+        letter-spacing: .4em;
+    }
+
+}
+
+
+
+@media (max-width:575.98px){
+    .camping_bn{
+        background-image: url(../pic/camping/banner01_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .camping_1, .camping_2, .camping_3{
+        padding: 50px 30px;
+    }
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .camping_1, .camping_2, .camping_3{
+        padding: 50px 50px;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){
+    .camping_bn{
+        background-image: url(../pic/camping/banner01_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .camping_1, .camping_2, .camping_3{
+        padding: 50px 50px;
+    }
+}
+}
 /* ------------- 最新消息_選單 ------------- */
 .news_title{
     margin-bottom: 50px;
@@ -246,7 +299,7 @@
         padding: 50px 50px 20px 50px;
         margin-bottom: 50px;
     }
-    
+
     .news_title h4{
         font-size: 16px;
         letter-spacing: .2em;
@@ -501,4 +554,77 @@
 
 .campmap_pic .icon8:hover:before{
     content: '停車場';
+}
+
+/* ------------- 營區地圖RWD ------------- */
+
+@media (max-width:575.98px){
+    .campmap_bn{
+        background-image: url(../pic/news/banner01_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+    .news_title{
+        padding: 50px 30px 20px 30px;
+        margin-bottom: 50px;
+    }
+
+    .news_title h4{
+        font-size: 14px;
+        letter-spacing: .2em;
+    }
+
+    .news_title h4:hover{
+        letter-spacing: .4em;
+    }
+
+    .news_main{
+    padding: 0 30px;
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .news_title{
+        padding: 50px 50px 20px 50px;
+        margin-bottom: 50px;
+    }
+
+    .news_title h4{
+        font-size: 16px;
+        letter-spacing: .2em;
+    }
+
+    .news_title h4:hover{
+        letter-spacing: .4em;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){
+    .news_bn{
+        background-image: url(../pic/news/banner01_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+    .news_title{
+        padding: 50px 50px 20px 50px;
+        margin-bottom: 50px;
+    }
+
+    .news_title h4{
+        font-size: 16px;
+        letter-spacing: .2em;
+    }
+
+    .news_title h4:hover{
+        letter-spacing: .4em;
+    }
+
+    .news_main{
+    padding: 0 30px;
+    }
+}
 }
