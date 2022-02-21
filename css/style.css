@@ -119,9 +119,37 @@ a{
     padding-right: 20px; 
 }
 
-/* .breadcrumb a:last-child{
-    color: #292421 ; 
-} */
+.breadcrumb > li:last-child > a:last-child{
+    border-bottom: 1px solid #ADAAA5;
+}
+
+@media (max-width:575.98px){
+    .breadcrumbList{
+        padding: 10px 30px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    } 
+
+    .breadcrumb li {
+        flex-basis: 90px;
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .breadcrumbList{
+        padding: 10px 50px;
+        width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    } 
+
+    .breadcrumb li {
+        flex-basis: 90px;
+    }
+
+}
 
 
 /* -------------主選單(上排固定) ------------- */
@@ -512,6 +540,16 @@ nav a{
         transform: translateX(-42%);
     }
 
+    .min_bn{
+        margin-top: 30px;
+        width: 100%;
+        height: 350px;
+        overflow: hidden;
+    }
+    .min_bn img{
+        display: none;
+    }
+}
 
 }
 
@@ -540,6 +578,7 @@ nav a{
         transform: translateX(-42%);
     }
 
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.9px){
@@ -567,10 +606,42 @@ nav a{
         transform: translateX(-42%);
     }
 
+    .min_bn{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .min_bn img{
+        width: 1200px;
+    }
 }
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .min_bn{
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .min_bn img{
+        display: none;
+    }
+}
+
+
 @media screen and (min-width: 992px) and (max-width: 1199.8px){
     .index_banner_text {
         top: 5%;
+    }
+
+    .min_bn{
+        width: 100%;
+        height: 380px;
+        overflow: hidden;
+    }
+
+    .min_bn img{
+        width: 1400px;
     }
 
 }
@@ -1121,26 +1192,62 @@ nav a{
     background-color: #EFEBEB;
 }
 
+
+@media (max-width:575.98px){
+    .products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap, .camp_facillties{
+        padding: 50px 30px
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap, .camp_facillties{
+        padding: 50px 50px
+    }
+}
+
 /* ------------- 產品總覽_區塊一(體驗_大小標) ------------- */
 .products_1 ul,  .products_2 ul,  .products_3 ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* flex-wrap:wrap; */
+
 }
 
 .products_1 img,  .products_2 img,  .products_3 img{
-    width: 75%;
+    width: 80%;
     display: block;
     margin: 0 auto;
     margin-bottom: 10px;
+}
 
+@media (max-width:575.98px){
+    .products_1 ul,  .products_2 ul,  .products_3 ul{
+        flex-wrap:wrap;
+    }
+    
+    .products_1 p, .products_2 p, .products_3 p{
+        font-size: 18px;
+    }
+
+    .products_bn{
+        background-image: url(../pic/products/banner02_cut.png);
+        background-position: 38% 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .products_bn{
+    background-image: url(../pic/products/banner02_cut.png);
+    background-position: 38% 100%;
+}
 }
 
 
 /* ------------- 特色體驗_圖片排版 ------------- */
 .experience{
-    width: 1000px;
+    /* width: 1000px; */
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .experience ul{
@@ -1165,6 +1272,17 @@ nav a{
 
 .experience p{
     margin-bottom: 50px;
+}
+
+@media (max-width:575.98px){
+    .experience {
+        width: 100%;
+        flex-wrap:wrap;
+    }
+    
+    .experience p{
+        font-size: 18px;
+    }
 }
 
 
@@ -1330,5 +1448,6 @@ ul li .font_white:hover, footer a:hover{
 /* ------------- breadcrumb hover  ------------ */
 .breadcrumb a:hover{
     color: #292421;
+    opacity: .8;
     border-bottom: 1px solid #292421 ;
 }
