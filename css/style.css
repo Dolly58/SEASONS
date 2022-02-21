@@ -36,14 +36,6 @@ p{
         font-size: 26px;
     }
 
-    h3{
-        font-size:16px;
-    }
-
-    h4{
-        font-size:14px;
-        color: #433E3B;
-    }
 }
 
 
@@ -1017,35 +1009,8 @@ nav a{
         padding-bottom: 50px;
     }
 }
-/* .banner_nature{
-
-
-    margin: 0 auto;
-    width: 100%;
-}
-
-.banner_nature ul{
-    width: 100%;
-    display: flex;
-}
-
-.banner_nature img{
-    width: 300px;
-    margin-right: 10px;
-} */
-
 
 /* ------------- 首頁_區塊四_圖_動畫 ------------- */
-/* 
-.banner_nature{
-    animation: picmove 30s linear infinite forwards; 
-}
-
-@keyframes picmove { 
-    from { transform: translate(0); } 
-    to { transform: translate(-1500px); } 
-}*/
-
     @-webkit-keyframes scroll {
     0% {
     -webkit-transform: translateX(0);

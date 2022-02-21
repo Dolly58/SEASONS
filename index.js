@@ -14,6 +14,19 @@
    }
   });
 
+  /*********** 手機版選單+漢堡***********/
+// jQuery 版本
+$(function(){
+  
+  $("button.hamburger").on("click", function(){
+    $(this).toggleClass("is-active");
+    $(".nav_main").slideToggle();
+    $(".add").toggleClass("mask_index");
+  });
+  
+
+});
+
 /*********** 漢堡 ***********/
 // // jQuery 版本
 // $(function(){
