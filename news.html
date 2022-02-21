@@ -23,7 +23,7 @@
 <!----------- 選單列開始 ------------>
 <nav>
 <!----------- 首頁大圖 ------------>
-<div class="index_banner"> 
+<div class="index_banner min_bn news_bn"> 
     <img src="./pic/news/banner01_cut.png" alt="">
 </div>
 <!----------- breadcrumb ------------>
@@ -36,7 +36,6 @@
     </div>
   </div>
 
-
 <!----------- 上排選單 ------------>
 <div class="nav_top" id="nav_top">
     <ul>
@@ -44,8 +43,8 @@
         <a href="index.html"><li class="logo_white"><img src="./pic/logo4_white.svg"></a></li>
         <a href="index.html"><li class="logo_black"><img src="./pic/logo4_black.svg"></a></li>
         </div>
-        
         </a>
+
         <li><a class="font_white" href="#">線上預約</a></li>
         <li><a class="font_white" href="campmap.html">營區地圖</a></li>
         <li><a class="font_white" href="about.html">關於我們</a></li>
@@ -54,6 +53,51 @@
         <li><a class="font_white" href="products.html">豪華露營</a></li>
     </ul>
 </div>
+<!----------- 手機版選單 ------------>
+<div class="mobile_nav">
+    <ul>
+        <li><button class=" hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button></li>
+
+        <li class="mobile_logo">
+            <a href="index.html"><img src="./pic/logo4_black.svg"></a></li>
+    </ul>
+</div>
+
+<div class="nav_main">
+
+    <div class="nav_main_title">
+        <h5>SEASONS</h5>
+        <div class="line"></div>
+    </div>
+
+    <div class="nav_main_list">
+        <ul>
+            <li><a class="font_white" href="products.html"><p>豪華露營</p></a></li>
+            <li><a class="font_white"  href="experience.html"><p>特色體驗</p></a></li>
+            <li><a class="font_white" href="news.html"><p>最新消息</p></a></li>
+            <li><a class="font_white" href="about.html"><p>關於我們</p></a></li>
+            <li><a class="font_white" href="campmap.html"><p>營區地圖</p></a></li>
+            <li><a class="font_white" href="#"><p>線上預約</p></a></li>
+        </ul>
+        <div class="line"></div>
+
+        <div class="nav_icon">
+            <a href="https://line.me/zh-hant/" target ="_blank"><i class="fab fa-line"></i></a>
+
+            <a href="https://www.instagram.com/" target ="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.facebook.com/" target ="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+
+    </div>
+</div>
+
+<!------ 遮罩 -------->
+<div class="add"></div>
 
 <!----------- 選單列(左側固定) ------------>  
 <div class="nav_left">
@@ -76,135 +120,143 @@
 
 
 <!----------- 最新消息_選單 ------------>
-<div class="news_title">
-    <h2>最新消息</h2>
-    <ul>
-        <li><a href="#"><h4>所有消息</h4></a></li>
-        <li><a href="#"><h4>季節體驗</h4></a></li>
-        <li><a href="#"><h4>優惠活動</h4></a></li>
-        <li><a href="#"><h4>營地公告</h4></a></li>
-    </ul>
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+    <div class="news_title">
+        <h2>最新消息</h2>
+        <ul>
+            <li><a href="#"><h4>所有消息</h4></a></li>
+            <li><a href="#"><h4>季節體驗</h4></a></li>
+            <li><a href="#"><h4>優惠活動</h4></a></li>
+            <li><a href="#"><h4>營地公告</h4></a></li>
+        </ul>
+    </div>
 </div>
 <!----------- 遮罩 ------------> 
 <div class="news_bg"></div>
 
 <!----------- news_box_star ------------>
 <!----------- 疫情公告 ------------>
-<div class="news_main">
-    <div class="news_box" id="box">
-        <!-- <a href="" target="_blank"> -->
-        <img src="./pic/news/pic01.png" alt="">
+<div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+    <div class="news_main">
+        <div class="news_box" id="box">
+            <!-- <a href="" target="_blank"> -->
+            <img src="./pic/news/pic01.png" alt="">
 
-        <p class="font_white"><i class="fas fa-bullhorn"></i> 新冠肺炎疫情公告</p>
+            <p class="font_white"><i class="fas fa-bullhorn"></i> 新冠肺炎疫情公告</p>
 
-        <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
+            <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
 
-        <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button><br></p>
-        
-        <div class="triangle">
-            <div class="tab_border">HOT</div>
+            <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button><br></p>
+            
+            <div class="triangle">
+                <div class="tab_border">HOT</div>
+            </div>
+            </a>
         </div>
-        </a>
-    </div>
-<!----------- 疫情公告_彈窗 ------------>
-    <div class="windows noshow">
-        <div class="windows_bn">
-            <img src="./pic/news/news_window01.png" alt="">
+    <!----------- 疫情公告_彈窗 ------------>
+        <div class="windows noshow">
+            <div class="windows_bn">
+                <img src="./pic/news/news_window01.png" alt="">
+            </div>
+            
+            <div class="windows_text">
+            <h2>新冠肺炎疫情公告</h2>
+            <p><i class="fas fa-calendar"></i> 2022/01/30</p>
+            <p>因應新冠肺炎國內本土疫情未歇，為了各位旅客以及國人的健康，旅客可以選擇延期或扣除必要費用後全額退款，後續行程異動，將視疫情發展情況與中央疫情指揮中心政策調整。<br><br>
+            營區規定：<br>
+            ※人流管控進出，除預約制外，謝絕訪客和參觀。<br>
+            ※各區浴廁、固定式露營設施將定時定點實施消毒。<br>
+            ※入營區前採實聯制，請配合測量體溫、配戴口罩與手部消毒。<br>
+            ※營區內遊戲區設備與各DIY活動因防疫政策暫不對外開放。<br>
+            ※請自備或預先租借露營設備，入營區後不提供各類露營設備租借服務。<br><br>
+            為維護您我的健康、採取必要的防疫措施，若期間諸多限制造成不便還需請見諒，再次感謝各位的配合與支持。</p>
+            </div>
+            
+            <button id="close">X</button>
         </div>
-        
-        <div class="windows_text">
-        <h2>新冠肺炎疫情公告</h2>
-        <p><i class="fas fa-calendar"></i> 2022/01/30</p>
-        <p>因應新冠肺炎國內本土疫情未歇，為了各位旅客以及國人的健康，旅客可以選擇延期或扣除必要費用後全額退款，後續行程異動，將視疫情發展情況與中央疫情指揮中心政策調整。<br><br>
-        營區規定：<br>
-        ※人流管控進出，除預約制外，謝絕訪客和參觀。<br>
-        ※各區浴廁、固定式露營設施將定時定點實施消毒。<br>
-        ※入營區前採實聯制，請配合測量體溫、配戴口罩與手部消毒。<br>
-        ※營區內遊戲區設備與各DIY活動因防疫政策暫不對外開放。<br>
-        ※請自備或預先租借露營設備，入營區後不提供各類露營設備租借服務。<br><br>
-        為維護您我的健康、採取必要的防疫措施，若期間諸多限制造成不便還需請見諒，再次感謝各位的配合與支持。</p>
+        <div class="news_box" id="box">
+            <!-- <a href="" target="_blank"> -->
+            <img src="./pic/news/pic01.png" alt="">
+
+            <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
+
+            <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
+
+            <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
+            
+            <!-- <div class="triangle">
+                <div class="tab_border">HOT</div>
+            </div> -->
+            </a>
         </div>
-        
-        <button id="close">X</button>
-    </div>
-    <div class="news_box" id="box">
-        <!-- <a href="" target="_blank"> -->
-        <img src="./pic/news/pic01.png" alt="">
 
-        <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
+        <div class="news_box" id="box">
+            <!-- <a href="" target="_blank"> -->
+            <img src="./pic/news/pic01.png" alt="">
 
-        <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
+            <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
 
-        <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
-        
-        <!-- <div class="triangle">
-            <div class="tab_border">HOT</div>
-        </div> -->
-        </a>
-    </div>
+            <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
 
-    <div class="news_box" id="box">
-        <!-- <a href="" target="_blank"> -->
-        <img src="./pic/news/pic01.png" alt="">
-
-        <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
-
-        <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
-
-        <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
-        
-        <!-- <div class="triangle">
-            <div class="tab_border">HOT</div>
+            <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
+            
+            <!-- <div class="triangle">
+                <div class="tab_border">HOT</div>
+            </div>
+            </a> -->
         </div>
-        </a> -->
-    </div>
 
-    <div class="news_box" id="box">
-        <!-- <a href="" target="_blank"> -->
-        <img src="./pic/news/pic01.png" alt="">
+        <div class="news_box" id="box">
+            <!-- <a href="" target="_blank"> -->
+            <img src="./pic/news/pic01.png" alt="">
 
-        <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
+            <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
 
-        <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
+            <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
 
-        <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
-        
-        <!-- <div class="triangle">
-            <div class="tab_border">HOT</div>
-        </div> -->
-        </a>
-    </div>
+            <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
+            
+            <!-- <div class="triangle">
+                <div class="tab_border">HOT</div>
+            </div> -->
+            </a>
+        </div>
 
-    <div class="news_box" id="box">
-        <!-- <a href="" target="_blank"> -->
-        <img src="./pic/news/pic01.png" alt="">
+        <div class="news_box" id="box">
+            <!-- <a href="" target="_blank"> -->
+            <img src="./pic/news/pic01.png" alt="">
 
-        <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
+            <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
 
-        <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
+            <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
 
-        <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
-        
-        <!-- <div class="triangle">
-            <div class="tab_border">HOT</div>
-        </div> -->
-        </a>
-    </div>
+            <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
+            
+            <!-- <div class="triangle">
+                <div class="tab_border">HOT</div>
+            </div> -->
+            </a>
+        </div>
 
-    <div class="news_box" id="box">
-        <!-- <a href="" target="_blank"> -->
-        <img src="./pic/news/pic01.png" alt="">
+        <div class="news_box" id="box">
+            <!-- <a href="" target="_blank"> -->
+            <img src="./pic/news/pic01.png" alt="">
 
-        <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
+            <p class="font_white"><i class="fas fa-bullhorn"></i> 疫情公告</p>
 
-        <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
+            <p class="font_white"><i class="fas fa-calendar"></i> 2022/01/30</p>
 
-        <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
-        
-        <!-- <div class="triangle">
-            <div class="tab_border">HOT</div>
-        </div> -->
-        </a>
+            <p class="font_white"><i class="fas fa-comment-alt"></i></i> 因應新冠肺炎國內本土疫情未歇......<button>＋</button></p>
+            
+            <!-- <div class="triangle">
+                <div class="tab_border">HOT</div>
+            </div> -->
+            </a>
+        </div>
     </div>
 </div>
 <!----------- news_box_end ------------>
