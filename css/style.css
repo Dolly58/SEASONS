@@ -488,7 +488,7 @@ nav a{
 
 
 @media (max-width:575.98px){
-    .index_banner{
+    .max_banner{
         width: 100%;
         height: 550px;
 
@@ -496,7 +496,7 @@ nav a{
         overflow: hidden;
     }
 
-    .index_banner img{
+    .max_banner img{
         width: 1100px;
         display: block;
         
@@ -506,7 +506,7 @@ nav a{
         transform:translateX(-50%);
     }
 
-    .index_banner_text{
+    .max_banner{
         top: 5%;
         left: 42%;
         transform: translateX(-42%);
@@ -516,7 +516,7 @@ nav a{
 }
 
 @media screen and (min-width: 768px) and (max-width: 991.8px){  
-    .index_banner{
+    .max_banner{
         width: 100%;
         height: 550px;
 
@@ -524,7 +524,7 @@ nav a{
         overflow: hidden;
     }
 
-    .index_banner img{
+    .max_banner img{
         width: 1100px;
         display: block;
         
@@ -543,7 +543,7 @@ nav a{
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.9px){
-    .index_banner{
+    .max_banner{
         width: 100%;
         height: 550px;
 
@@ -551,7 +551,7 @@ nav a{
         overflow: hidden;
     }
 
-    .index_banner img{
+    .max_banner img{
         width: 1100px;
         display: block;
         
