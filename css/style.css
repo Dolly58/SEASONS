@@ -36,6 +36,9 @@ p{
         font-size: 26px;
     }
 
+    h3{
+        font-size:18px;
+    }
 }
 
 
@@ -672,6 +675,10 @@ nav a{
     
 /* ------------- 首頁_區塊二豪華帳棚RWD ------------- */
 @media (max-width:575.98px){
+    .wrapper_2 h3, .wrapper_3 h3{
+        font-size: 20px;
+    }
+
     .wrapper_2{
         width: 100%;
         padding: 70px 30px;
