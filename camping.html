@@ -189,9 +189,13 @@
             <a data-fancybox="gallery" href="/pic/camping/pic_2_04_max.png">
                 <img class="rounded" src="./pic/camping/pic_2_04.png" />
             </a>
-            <a data-fancybox="gallery" href="/pic/camping/pic_2_01_max.png">
-                <img class="rounded" src="./pic/camping/pic_2_01.png" />
+            <a data-fancybox="gallery" href="/pic/camping/pic_2_06_max.png">
+                <img class="rounded" src="./pic/camping/pic_2_06.png" />
             </a>
+            <a data-fancybox="gallery" href="/pic/camping/pic_2_07_max.png">
+                <img class="rounded" src="./pic/camping/pic_2_07.png" />
+            </a>
+            
         </div>
           <!-- </div> -->
     </ul>
@@ -256,45 +260,49 @@
 </div> 
 
 <script>
-var owl = $('.owl-carousel');
- $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        // items:3,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1400,
+        autoplayHoverPause:true,
+        responsive:{
         0:{
             items:1,
-            nav:false,
+            loop:true,
+            margin:10,
             autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
         },
         600:{
             items:2,
-            nav:false,
+            loop:true,
+            margin:10,
             autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
         },
         1000:{
             items:3,
-            nav:false,
-            loop:false, 
+            loop:true,
+            margin:10,
             autoplay:true,
-            autoplayTimeout:3000,
-            autoplayHoverPause:true
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
         }
     }
-})
-          var owl = $('.owl-carousel');
-          owl.owlCarousel({
-              items:4,
-              loop:true,
-              margin:10,
-              autoplay:true,
-              autoplayTimeout:1000,
-              autoplayHoverPause:true
-          });
+
+    });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
+
 </script>
 
 
