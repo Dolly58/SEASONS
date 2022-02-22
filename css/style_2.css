@@ -525,7 +525,7 @@ a[data-fancybox] img {
     background-position: center;
     background-repeat: no-repeat;
     background-image: url(../pic/campmap/map_cut.png);
-    width: 800px;
+    width: 80%;
     height: 400px;
     margin: 0 auto;
     position: relative;
@@ -718,3 +718,77 @@ a[data-fancybox] img {
 }
 
 
+
+
+
+
+
+/* test */
+.map{
+    width: 60%;
+    position: relative;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.map img{
+    width: 100%;
+    display: block;
+    
+
+}
+
+
+.map i {
+    color: #191F45;
+    position: absolute;
+    font-size: 36px;
+
+    animation:icon_move 2s infinite;
+}
+
+.map .icon1{
+    top: 15%;
+    left: 60%;
+}
+
+.map .icon2 {
+    top: 22%;
+    left: 70%;
+}
+
+.map .icon3 {
+    top: 52%;
+    left: 50%;
+}
+
+.map .icon4 {
+    top: 46%;
+    left: 39%;
+}
+
+.map .icon5 {
+    top: 13%;
+    left: 48%;
+}
+
+.map .icon6 {
+    top: 85%;
+    left: 47%;
+}
+
+.map .icon7 {
+    top: 57%;
+    left: 87%;
+}
+
+.map .icon8 {
+    top: 77%;
+    left: 82%;
+}
+
+@keyframes icon_move{
+	0% {transform: translate(0px, 0px);}
+    50% {transform: translate(0px, -10px);}
+	100% {transform: translate(0px, 0px);}
+}
