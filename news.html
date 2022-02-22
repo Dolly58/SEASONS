@@ -136,6 +136,27 @@
 <!----------- 遮罩 ------------> 
 <div class="news_bg"></div>
 
+<!----------- 疫情公告_彈窗 ------------>
+<div class="windows noshow">
+    <div class="windows_bn">
+        <img src="./pic/news/news_window01.png" alt="">
+    </div>
+    
+    <div class="windows_text">
+    <h2>新冠肺炎疫情公告</h2>
+    <p><i class="fas fa-calendar"></i> 2022/01/30</p>
+    <p>因應新冠肺炎國內本土疫情未歇，為了各位旅客以及國人的健康，旅客可以選擇延期或扣除必要費用後全額退款，後續行程異動，將視疫情發展情況與中央疫情指揮中心政策調整。<br><br>
+    營區規定：<br>
+    ※人流管控進出，除預約制外，謝絕訪客和參觀。<br>
+    ※各區浴廁、固定式露營設施將定時定點實施消毒。<br>
+    ※入營區前採實聯制，請配合測量體溫、配戴口罩與手部消毒。<br>
+    ※營區內遊戲區設備與各DIY活動因防疫政策暫不對外開放。<br>
+    ※請自備或預先租借露營設備，入營區後不提供各類露營設備租借服務。<br><br>
+    為維護您我的健康、採取必要的防疫措施，若期間諸多限制造成不便還需請見諒，再次感謝各位的配合與支持。</p>
+    </div>
+    
+    <button id="close">X</button>
+</div>
 <!----------- news_box_star ------------>
 <!----------- 疫情公告 ------------>
 <div data-aos="fade-down"
@@ -156,27 +177,6 @@
                 <div class="tab_border">HOT</div>
             </div>
             </a>
-        </div>
-    <!----------- 疫情公告_彈窗 ------------>
-        <div class="windows noshow">
-            <div class="windows_bn">
-                <img src="./pic/news/news_window01.png" alt="">
-            </div>
-            
-            <div class="windows_text">
-            <h2>新冠肺炎疫情公告</h2>
-            <p><i class="fas fa-calendar"></i> 2022/01/30</p>
-            <p>因應新冠肺炎國內本土疫情未歇，為了各位旅客以及國人的健康，旅客可以選擇延期或扣除必要費用後全額退款，後續行程異動，將視疫情發展情況與中央疫情指揮中心政策調整。<br><br>
-            營區規定：<br>
-            ※人流管控進出，除預約制外，謝絕訪客和參觀。<br>
-            ※各區浴廁、固定式露營設施將定時定點實施消毒。<br>
-            ※入營區前採實聯制，請配合測量體溫、配戴口罩與手部消毒。<br>
-            ※營區內遊戲區設備與各DIY活動因防疫政策暫不對外開放。<br>
-            ※請自備或預先租借露營設備，入營區後不提供各類露營設備租借服務。<br><br>
-            為維護您我的健康、採取必要的防疫措施，若期間諸多限制造成不便還需請見諒，再次感謝各位的配合與支持。</p>
-            </div>
-            
-            <button id="close">X</button>
         </div>
         <div class="news_box" id="box">
             <!-- <a href="" target="_blank"> -->
@@ -298,5 +298,30 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="index.js"></script>
   <script>AOS.init();</script>
+
+  <script>
+      
+    /*********** 最新消息彈窗 ***********/
+    let popup = document.getElementsByClassName('windows')[0];
+    let mask = document.getElementsByClassName('news_bg')[0];
+    let Xbtn = document.getElementById('close');
+    let box = document.getElementById('box');
+
+    box.onclick = function show(){
+    popup.classList.remove("noshow")
+    mask.classList.add("mask")
+    }
+
+    Xbtn.onclick  = function close(){
+    popup.classList.add("noshow")
+    mask.classList.remove("mask")
+    }
+
+    mask.onclick  = function close(){
+    popup.classList.add("noshow")
+    mask.classList.remove("mask")
+    }
+
+  </script>
 </body>
 </html>
