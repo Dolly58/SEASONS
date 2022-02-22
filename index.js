@@ -1,5 +1,5 @@
-"use strict";
-  /*********** 主選單顏色變化 ***********/
+
+/*********** 主選單顏色變化 ***********/
   $(window).scroll(function(){
     if ( $(this).scrollTop() > 350) {
       $('.nav_top').addClass('scroll');
