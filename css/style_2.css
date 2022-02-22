@@ -402,8 +402,13 @@ a[data-fancybox] img {
         letter-spacing: .4em;
     }
 
-}
+    .news_bn{
+        background-image: url(../pic/news/banner01_cut.png);
+        background-position: 10% 50%;
+        background-size: cover;
+    }
 
+}
 
 @media screen and (min-width: 768px) and (max-width: 991.8px){
     .news_bn{
@@ -480,6 +485,39 @@ a[data-fancybox] img {
 .about ul li:hover{
     flex-grow: 3;
 }
+
+
+@media (max-width:575.98px){
+    .about_bn{
+        background-image: url(../pic/about/banner02_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .about_bn{
+        background-image: url(../pic/about/banner02_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){
+    .about_bn{
+        background-image: url(../pic/about/banner02_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+
+
 
 /* ------------- 營區地圖_地圖 ------------- */
 

@@ -582,11 +582,12 @@ nav a{
 
     .min_bn{
         width: 100%;
+        height: 400px;
         overflow: hidden;
     }
 
     .min_bn img{
-        width: 1200px;
+        display: none;
     }
 }
 
@@ -1234,6 +1235,15 @@ nav a{
         background-position: 38% 100%;
     }
 }
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .products_bn{
+    background-image: url(../pic/products/banner02_cut.png);
+    background-position: 38% 100%;
+    background-size: cover;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991.8px){  
     .products_bn{
     background-image: url(../pic/products/banner02_cut.png);
@@ -1290,7 +1300,13 @@ nav a{
     }
 }
 
-
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .experience_bn{
+    background-image: url(../pic/experience/banner03_cut.png);
+    background-position: center;
+    background-size: cover;
+    }
+}
 
 @media screen and (min-width: 768px) and (max-width: 991.8px){
     .experience_bn{
