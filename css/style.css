@@ -212,6 +212,13 @@ nav a{
     }
 }
 
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    #nav_top{
+        display: none;
+    }
+}
+
+
 /* ------------- 選單滾動色彩 ------------- */
 /* .scroll {
     position: fixed;
@@ -353,6 +360,20 @@ nav a{
     .mask_index{
         display: none !important ;
     }
+}
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .nav_main{
+        display: none !important ;
+    }
+
+    .mask_index{
+        display: none !important ;
+    }
+
+    .mobile_nav{
+        display: block;
+    }
+
 }
 
 /* ------------- 主選單(左側固定) ------------- */
