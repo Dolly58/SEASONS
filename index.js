@@ -23,8 +23,6 @@ $(function(){
     $(".nav_main").slideToggle();
     $(".add").toggleClass("mask_index");
   });
-  
-
 });
 
 /*********** 漢堡 ***********/
