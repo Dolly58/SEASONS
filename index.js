@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
   /*********** 主選單顏色變化 ***********/
   $(window).scroll(function(){
     if ( $(this).scrollTop() > 350) {
@@ -13,6 +13,7 @@
       $('.logo_black').css("display","none")
    }
   });
+
 
   /*********** 手機版選單+漢堡***********/
 // jQuery 版本
