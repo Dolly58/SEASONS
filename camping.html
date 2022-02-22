@@ -256,21 +256,45 @@
 </div> 
 
 <script>
-    var owl = $('.owl-carousel');
-owl.owlCarousel({
-    items:3,
+var owl = $('.owl-carousel');
+ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
-    autoplay:true,
-    autoplayTimeout:2000,
-    autoplayHoverPause:true
-});
-$('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[2000])
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        },
+        600:{
+            items:2,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        },
+        1000:{
+            items:3,
+            nav:false,
+            loop:false, 
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true
+        }
+    }
 })
-$('.stop').on('click',function(){
-    owl.trigger('stop.owl.autoplay')
-})
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+              items:4,
+              loop:true,
+              margin:10,
+              autoplay:true,
+              autoplayTimeout:1000,
+              autoplayHoverPause:true
+          });
 </script>
 
 
