@@ -297,8 +297,9 @@ a[data-fancybox] img {
 }
 
 .windows {
-    width: 850px;
+    width: 800px;
     height: 500px;
+    box-sizing: border-box;
     /* background-color:#FFFAFA; */
     background-color:#EFEBEB;
     
@@ -322,6 +323,7 @@ a[data-fancybox] img {
     width: 630px;
     height: 430px;
     margin: 100px 0 30px 30px;
+    padding-bottom: 50px;
 }
 
 .windows_bn{
@@ -355,6 +357,44 @@ a[data-fancybox] img {
 .noshow{
     display: none;
 }
+
+@media (max-width:575.98px){
+    .windows{
+        width: 80%;
+        flex-direction:column;
+        box-sizing: border-box;
+    }
+
+    .windows p{
+        width: 55%;
+    }
+
+    .windows button{
+        order: -1;
+        float: right;
+    }
+
+    .windows_text{
+        margin: 20px;
+        /* box-sizing: border-box; */
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.9px){
+    .windows{
+        width: 88%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .windows{
+        width: 88%;
+
+    }
+}
+
+
+
 /* =========最新消息RWD ==========*/
 .news_title ul{
     width: 100%;
