@@ -1,22 +1,32 @@
-
-
 /*********** 主選單顏色變化 ***********/
   $(window).scroll(function(){
     if ( $(this).scrollTop() > 350) {
       $('.nav_top').addClass('scroll');
       $('.nav_top').addClass('bg_color');
-      $('ul li .font_white:hover').css('border-bottom', '1px solid #292421');
-      
+      $('ul li .font_white').addClass('gray_border');
+      $('ul li .font_white').removeClass('white_border');
       $('.logo_white').css("display","none");
       $('.logo_black').css("display","block")
     } else {
       $('.nav_top').removeClass('scroll');
       $('.nav_top').removeClass('bg_color');
-      $('ul li .font_white:hover').css('border-bottom', '1px solid #FFFAFA');
+      $('ul li .font_white').addClass('white_border');
+      $('ul li .font_white').removeClass('gray_border');
       $('.logo_white').css("display","block");
       $('.logo_black').css("display","none")
    }
   });
+
+
+  // $('ul li .font_white').hover(function() {
+  //   console.log(this);
+  //   $(this).css("border-bottom","1px solid #292421");
+  //   $('.white_border').css("border-bottom","1px solid #FFFAFA")
+  // }, function() {
+  //   console.log("b");
+  //   $('.gray_border').css("border-bottom","none");
+  //   $('.white_border').css("border-bottom","none")
+  // });
 
 
   /*********** 手機版選單+漢堡***********/

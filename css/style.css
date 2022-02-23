@@ -1479,16 +1479,26 @@ iframe{
 
 
 /* ------------- 底線hover  ------------- */
-ul li .font_white:hover, footer a:hover{
+/* ul li .font_white:hover, footer a:hover{
     border-bottom: 1px solid #FFFAFA;
     opacity:1;
+} */
+
+.white_border:hover{
+    border-bottom:1px solid #FFFAFA;
+    /* display:none; */
+}
+
+.gray_border:hover{
+    border-bottom:1px solid #292421;
+    /* display:none; */
 }
 
 /* ------------- 透明度hover  ------------- */
-.nav_top ul li a .font_white:hover, .nav_left a:hover , .nav_right i:hover , .wrapper_2 a:hover, .wrapper_3 a:hover, .facillties_box_text .btn1:hover , a:hover{
+/* .nav_top ul li a .font_white:hover, .nav_left a:hover , .nav_right i:hover , .wrapper_2 a:hover, .wrapper_3 a:hover, .facillties_box_text .btn1:hover , a:hover{
     opacity:.4;
 }
-
+ */
 
 /* ------------- 產品總覽hover  ------------- */
 .products_1 li:hover, .products_2 li:hover,.products_3 li:hover, .experience li:hover{
