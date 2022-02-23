@@ -5,11 +5,14 @@
     if ( $(this).scrollTop() > 350) {
       $('.nav_top').addClass('scroll');
       $('.nav_top').addClass('bg_color');
+      $('ul li .font_white:hover').css('border-bottom', '1px solid #292421');
+      
       $('.logo_white').css("display","none");
       $('.logo_black').css("display","block")
     } else {
       $('.nav_top').removeClass('scroll');
       $('.nav_top').removeClass('bg_color');
+      $('ul li .font_white:hover').css('border-bottom', '1px solid #FFFAFA');
       $('.logo_white').css("display","block");
       $('.logo_black').css("display","none")
    }

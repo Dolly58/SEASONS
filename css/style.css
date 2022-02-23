@@ -346,34 +346,48 @@ nav a{
     .mobile_nav{
         display: block;
     }
-
-    /* .nav_main{
-        display: block;
-    } */
 }
 
-@media (min-width:575.98px){
-    .nav_main{
-        display: none !important ;
-    }
-
-    .mask_index{
-        display: none !important ;
-    }
-}
 @media screen and (min-width: 576px) and (max-width: 767.9px){
-    .nav_main{
-        display: none !important ;
-    }
-
-    .mask_index{
-        display: none !important ;
-    }
-
     .mobile_nav{
         display: block;
     }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.8px){  
+    .nav_main{
+        display: none !important;
+    }
+
+    .mask_index{
+        display: none !important;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199.8px){
+    .nav_main{
+        display: none !important;
+    }
+    .mask_index{
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399.8px){ 
+    .nav_main{
+    display: none !important;
+    }    
+    .mask_index{
+    display: none !important;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .nav_main{
+        display: none !important;
+    }
 }
 
 /* ------------- 主選單(左側固定) ------------- */

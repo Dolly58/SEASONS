@@ -305,32 +305,32 @@
   AOS.init();
   
   /*********** 主選單顏色變化 ***********/
-$(window).scroll(function(){
-  if ( $(this).scrollTop() > 650) {
-    $('.nav_top').addClass('scroll');
-    $('.nav_top').addClass('bg_color');
-    $('.logo_white').css("display","none");
-    $('.logo_black').css("display","block")
-  } else {
-    $('.nav_top').removeClass('scroll');
-    $('.nav_top').removeClass('bg_color');
-    $('.logo_white').css("display","block");
-    $('.logo_black').css("display","none")
- }
-});
+    $(window).scroll(function(){
+    if ( $(this).scrollTop() > 650) {
+        $('.nav_top').addClass('scroll');
+        $('.nav_top').addClass('bg_color');
+        $('.logo_white').css("display","none");
+        $('.logo_black').css("display","block")
+    } else {
+        $('.nav_top').removeClass('scroll');
+        $('.nav_top').removeClass('bg_color');
+        $('.logo_white').css("display","block");
+        $('.logo_black').css("display","none")
+    }
+    });
 
 
 
 /*********** 首頁輪播 ***********/
-$(document).ready(function(){
-$('.slick_fade').slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
-});
-});
+    $(document).ready(function(){
+    $('.slick_fade').slick({
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+    });
+    });
 
   </script>
 </body>
