@@ -553,7 +553,7 @@ nav a{
 @media (max-width:575.98px){
     .max_banner{
         width: 100%;
-        height: 100vh;
+        height: 580px;
 
         position: relative;
         overflow: hidden;
@@ -1200,11 +1200,11 @@ nav a{
 }
 
 /* ------------- 內容間距 ------------- */
-.products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap, .camp_facillties{
+.products_1, .products_2,  .products_3, .experience,.camping_1, .camping_2, .camping_3,  .about , .campmap{
     padding: 50px 100px 100px 100px
 }
 
-.products_1 h2, .products_1 p,.products_1 h4,  .products_2 h2,  .products_2 p, .products_2 h4, .products_3 h2,  .products_3 p,.products_3 h4, .camping_1 h2, .camping_1 p ,.camping_2 h2, .camping_2 p,.experience h4,.camping_3 h2, .camping_3 p, .news_title, .about h2, .about p , .campmap h2, .camp_facillties h2{
+.products_1 h2, .products_1 p,.products_1 h4,  .products_2 h2,  .products_2 p, .products_2 h4, .products_3 h2,  .products_3 p,.products_3 h4, .camping_1 h2, .camping_1 p ,.camping_2 h2, .camping_2 p,.experience h4,.camping_3 h2, .camping_3 p, .news_title, .about h2, .about p , .campmap h2{
     margin-bottom: 10px;
     text-align: center;
     letter-spacing: .4em;
