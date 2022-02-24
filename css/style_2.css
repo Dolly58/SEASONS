@@ -320,7 +320,7 @@ a[data-fancybox] img {
 }
 
 .windows_text{
-    width: 70%;
+    width: 0%;
     height: 70%;
     margin: 100px 0 30px 30px;
     padding-bottom: 50px;
@@ -362,6 +362,7 @@ a[data-fancybox] img {
     .windows{
         width: 80%;
         flex-direction:column;
+        padding: 0 0 15px 0;
     }
 
     .windows button{
@@ -370,6 +371,8 @@ a[data-fancybox] img {
     }
 
     .windows_text{
+        width: 85%;
+        padding: 0 0 15px 0;
         margin: 0 auto;
         box-sizing: border-box;
     }
@@ -382,6 +385,7 @@ a[data-fancybox] img {
     .windows_text p:nth-child(3){
         overflow-y: scroll;
         height: 100%;
+        font-size: 15px;
     }
 
     .windows_text>p{
