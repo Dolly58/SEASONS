@@ -320,8 +320,8 @@ a[data-fancybox] img {
 }
 
 .windows_text{
-    width: 630px;
-    height: 430px;
+    width: 70%;
+    height: 70%;
     margin: 100px 0 30px 30px;
     padding-bottom: 50px;
 }
@@ -362,21 +362,31 @@ a[data-fancybox] img {
     .windows{
         width: 80%;
         flex-direction:column;
-        box-sizing: border-box;
-    }
-
-    .windows p{
-        width: 55%;
     }
 
     .windows button{
         order: -1;
-        float: right;
+        /* float: right; */
     }
 
     .windows_text{
-        margin: 20px;
-        /* box-sizing: border-box; */
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .windows_bn {
+        display: none;
+
+    }
+
+    .windows_text p:nth-child(3){
+        overflow-y: scroll;
+        height: 100%;
+    }
+
+    .windows_text>p{
+        font-size: 10px;
+        margin: 5px 0 30px 0;
     }
 }
 
@@ -389,7 +399,6 @@ a[data-fancybox] img {
 @media screen and (min-width: 768px) and (max-width: 991.8px){  
     .windows{
         width: 88%;
-
     }
 }
 
