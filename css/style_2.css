@@ -392,6 +392,10 @@ a[data-fancybox] img {
         font-size: 10px;
         margin: 5px 0 30px 0;
     }
+
+    .triangle .tab_border{
+        font-size: 10px;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.9px){
