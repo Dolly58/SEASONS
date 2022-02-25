@@ -170,6 +170,12 @@ a[data-fancybox] img {
 
 
 @media screen and (min-width: 576px) and (max-width: 767.9px){
+    .camping_bn{
+        background-image: url(../pic/camping/banner01_cut.png);
+        background-position: center;
+        background-size: cover;
+    }
+    
     .camping_1, .camping_2, .camping_3{
         padding: 50px 50px;
     }
@@ -185,7 +191,7 @@ a[data-fancybox] img {
     }
 
     .camping_1, .camping_2, .camping_3{
-        padding: 50px 50px;
+        padding: 50px 80px;
     }
 
 }
@@ -357,6 +363,9 @@ a[data-fancybox] img {
     display: none;
 }
 
+
+
+
 @media (max-width:575.98px){
     .windows{
         width: 80%;
@@ -441,6 +450,8 @@ a[data-fancybox] img {
     padding: 0 30px;
     }
 }
+
+
 
 
 @media screen and (min-width: 576px) and (max-width: 767.9px){
