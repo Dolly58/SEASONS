@@ -78,7 +78,6 @@ body{
     text-decoration-style:none;
     text-decoration-line:none;
     text-decoration-color:none;
-
 }
 
 a{
@@ -1600,7 +1599,7 @@ iframe{
 
     left: 48%;
     top: 50%;
-    transform:translateX(-50%);
+    transform:translateX(-48%);
     transform:translateY(-50%);
   }
 
