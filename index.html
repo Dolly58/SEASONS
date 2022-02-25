@@ -308,8 +308,14 @@
   <script src="index.js"></script>
   
   <script>
-  AOS.init();
-  
+    AOS.init();
+
+    // loading gif
+    $(window).load(function() {
+    $("#status").delay(5000).fadeOut(3000); //delay
+    $("#preloader").delay(7000).fadeOut(1500);
+    })
+
   /*********** 主選單顏色變化 ***********/
     $(window).scroll(function(){
     if ( $(this).scrollTop() > 650) {
