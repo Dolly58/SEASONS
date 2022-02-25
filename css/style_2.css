@@ -152,6 +152,12 @@ a[data-fancybox] img {
         letter-spacing: .4em;
     }
 
+    .ep_bn{
+        background-image: url(../pic/experience/banner04_cut.png);
+        background-position: 40% 0%;
+        background-size: cover;
+    }
+
 }
 
 
@@ -165,7 +171,13 @@ a[data-fancybox] img {
     .camping_1, .camping_2, .camping_3{
         padding: 50px 30px;
     }
-
+    
+    .ep_bn{
+        background-image: url(../pic/experience/banner04_cut.png);
+        /* background-position: center; */
+        background-position: 40% 0%;
+        background-size: cover;
+    }
 }
 
 
@@ -175,11 +187,16 @@ a[data-fancybox] img {
         background-position: center;
         background-size: cover;
     }
-    
+
     .camping_1, .camping_2, .camping_3{
         padding: 50px 50px;
     }
 
+    .ep_bn{
+        background-image: url(../pic/experience/banner04_cut.png);
+        background-position: 40% 0%;
+        background-size: cover;
+    }
 }
 
 
@@ -193,7 +210,12 @@ a[data-fancybox] img {
     .camping_1, .camping_2, .camping_3{
         padding: 50px 80px;
     }
-
+    
+    .ep_bn{
+        background-image: url(../pic/experience/banner04_cut.png);
+        background-position: 40% 0%;
+        background-size: cover;
+    }
 }
 /* ------------- 最新消息_選單 ------------- */
 .news_title{

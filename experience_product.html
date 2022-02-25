@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"></link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
     <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./css/hamburger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,21 +34,19 @@
 <!----------- 選單列開始 ------------>
 <nav>
 <!----------- 首頁大圖 ------------>
-<div class="index_banner"> 
+<div class="index_banner min_bn ep_bn"> 
     <img src="./pic/experience/banner04_cut.png" alt="">
 </div>
 <!----------- breadcrumb ------------>
-    <div class="breadcrumbList">
-        <div class="container">
-          <ol class="breadcrumb">
-            <li><a href="index.html"><i class="fas fa-campground"></i> 首頁</a></li>
-            <li><a href="experience.html">特色體驗</a></li>
-            <li><a href="experience_product.html">活動總覽</a></li>
-          </ol>
-        </div>
-      </div>
-
-
+<div class="breadcrumbList">
+    <div class="container">
+      <ol class="breadcrumb">
+        <li><a href="index.html"><i class="fas fa-campground"></i> 首頁</a></li>
+        <li><a href="experience.html">特色體驗</a></li>
+        <li><a href="experience_product.html">體驗總覽</a></li>
+      </ol>
+    </div>
+  </div>
 <!----------- 上排選單 ------------>
 <div class="nav_top" id="nav_top">
     <ul>
@@ -45,8 +54,8 @@
         <a href="index.html"><li class="logo_white"><img src="./pic/logo4_white.svg"></a></li>
         <a href="index.html"><li class="logo_black"><img src="./pic/logo4_black.svg"></a></li>
         </div>
-        
         </a>
+
         <li><a class="font_white" href="#">線上預約</a></li>
         <li><a class="font_white" href="campmap.html">營區地圖</a></li>
         <li><a class="font_white" href="about.html">關於我們</a></li>
@@ -54,7 +63,53 @@
         <li><a class="font_white"  href="experience.html">特色體驗</a></li>
         <li><a class="font_white" href="products.html">豪華露營</a></li>
     </ul>
-  </div>
+</div>
+<!----------- 手機版選單 ------------>
+<div class="mobile_nav">
+    <ul>
+        <li><button class=" hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+            </span>
+        </button></li>
+
+        <li class="mobile_logo">
+            <a href="index.html"><img src="./pic/logo4_black.svg"></a></li>
+    </ul>
+</div>
+
+<div class="nav_main">
+
+    <div class="nav_main_title">
+        <h5>SEASONS</h5>
+        <div class="line"></div>
+    </div>
+
+    <div class="nav_main_list">
+        <ul>
+            <li><a class="font_white" href="products.html"><p>豪華露營</p></a></li>
+            <li><a class="font_white"  href="experience.html"><p>特色體驗</p></a></li>
+            <li><a class="font_white" href="news.html"><p>最新消息</p></a></li>
+            <li><a class="font_white" href="about.html"><p>關於我們</p></a></li>
+            <li><a class="font_white" href="campmap.html"><p>營區地圖</p></a></li>
+            <li><a class="font_white" href="#"><p>線上預約</p></a></li>
+        </ul>
+        <div class="line"></div>
+
+        <div class="nav_icon">
+            <a href="https://line.me/zh-hant/" target ="_blank"><i class="fab fa-line"></i></a>
+
+            <a href="https://www.instagram.com/" target ="_blank"><i class="fab fa-instagram"></i></a>
+
+            <a href="https://www.facebook.com/" target ="_blank"><i class="fab fa-facebook-square"></i></a>
+        </div>
+
+    </div>
+</div>
+
+<!------ 遮罩 -------->
+<div class="add"></div>
+
 <!----------- 選單列(左側固定) ------------>  
 <div class="nav_left">
     <a href="index.html">SEASONS</a>
@@ -80,74 +135,175 @@
     <a name="BBQ"><h2>季節野炊料理</h2></a>
     <p> 各種季節蔬菜，露營也可以吃得很豐盛！</p>
     <ul>
-        <li><a href="#"><img src="./pic/experience/experience_pic01.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic03.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic04.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic02.png" alt=""></a></li>
+        <div class="owl-carousel owl-theme">
+            <a data-fancybox="gallery" href="./pic/experience/pic01_01_max.png">
+              <img class="rounded" src="./pic/experience/pic01_01.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic01_02_max.png">
+              <img class="rounded" src="../pic/experience/pic01_02.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic01_03_max.png">
+              <img class="rounded" src="./pic/experience/pic01_03.png" />
+            </a>
+            <a data-fancybox="gallery" href="/pic/experience/pic01_04_max.png">
+                <img class="rounded" src="./pic/experience/pic01_04.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic01_04_max.png">
+                <img class="rounded" src="./pic/experience/pic01_04.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic01_05_max.png">
+                <img class="rounded" src="./pic/experience/pic01_05.png" />
+            </a>
+        </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic01_06_max.png">
+                <img class="rounded" src="./pic/experience/pic01_06.png" />
+            </a>
+        </div>
     </ul>
 
     <div class="camping_text">
-    <p>
-        ◾ 依季節更換菜單<br>
-        ◾ 當地嚴選頂級食材、細膩的烹調工法，用美食留下美好回憶　　<button class="hidetogglebtn">＋</button><br>
-        <!-- ◾ 星空電影院，邊烤棉花糖度過浪漫夜晚<br>
-        ◾ 可加購其他當地體驗與季節特色料理 -->
-    </p></div>
+        <div class="camping_text_show hidetogglebtn">
+            <p>◾ 依季節更換菜單<br>
+            ◾ 地嚴選頂級食材、細膩的烹調工法，用美食留下美好回憶</p>
+
+            <button class="hidetogglebtn">...＋</button>
+        </div>
+
+    <p class="showcontent">
+        ◾ 享用食物新鮮原味，了解食材生長樣貌<br>
+        ◾ 特製的豪華料理，大飽口福
+        </p>
     </div>
 </div>
+</div> 
 
 <!----------- 帳篷單品_區塊二 ------------>
 <div class="camping_2" id="SUP">
     <a name="SUP" >
         <h2>SUP</h2></a>
     <p>Stand Up Paddle！不同視角欣賞壯闊美景</p>
+
     <ul>
-        <li><a href="#"><img src="./pic/experience/experience_pic05.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic07.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic08.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic06.png" alt=""></a></li>
-        
+        <div class="owl-carousel owl-theme">
+            <a data-fancybox="gallery" href="./pic/experience/pic02_01_max.png">
+              <img class="rounded" src="./pic/experience/pic02_01.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic02_02_max.png">
+              <img class="rounded" src="../pic/experience/pic02_02.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic02_03_max.png">
+              <img class="rounded" src="./pic/experience/pic02_03.png" />
+            </a>
+            <a data-fancybox="gallery" href="/pic/experience/pic02_04_max.png">
+                <img class="rounded" src="./pic/experience/pic02_04.png" />
+            </a>
+        </div>
     </ul>
 
     <div class="camping_text">
-    <p>
-        ◾ 基本動作與技巧教學，快速上手SUP立槳<br>
-        ◾ 全程由專業教練指導，大小朋友都能玩得盡興　　<button class="hidetogglebtn">＋</button><br><br>
-        <!-- ◾ 3 - 11 歲依小孩計價；滿 12歲以上依大人計價<br>
-        ◾ 省去帶裝備的麻煩，營區設備齊全，盥洗設備齊全<br>
-        ◾ 1 張雙人床、附冷暖氣、獨立衛浴設備、開放式專屬客廳與觀景區、獨立用餐環境、包區獨立衛浴、私人停車空間<br>
-        ◾ 可加購其他當地體驗與季節特色料理 -->
-    </p></div>
+        <div class="camping_text_show hidetogglebtn">
+            <p>◾ 基本動作與技巧教學，快速上手SUP立槳<br>
+            ◾ 全程由專業教練指導，大小朋友都能玩得盡興</p>
+
+            <button class="hidetogglebtn">...＋</button>
+        </div>
+
+    <p class="showcontent">
+        ◾ 附贈活動攝影，為您紀錄生動影像<br>
+        ◾ 三種體驗時段讓你自行挑選，欣賞不同時刻的美景<br>
+        ◾ 兩人即可出發，說走就走
+        </p>
     </div>
 </div>
+</div> 
 
 <!----------- 帳篷單品_區塊三 ------------>
 <div class="camping_3" id="ATV">
     <a name="ATV">
         <h2>全地形沙灘車</h2></a>
     <p>顛波、逐浪、飆沙，感受奔馳的快感！</p>
+
     <ul>
-        <li><a href="#"><img src="./pic/experience/experience_pic09.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic11.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic10.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic09.png" alt=""></a></li>
-        <li><a href="#"><img src="./pic/experience/experience_pic12.png" alt=""></a></li>
+        <div class="owl-carousel owl-theme">
+            <a data-fancybox="gallery" href="./pic/experience/pic03_01_max.png">
+              <img class="rounded" src="./pic/experience/pic03_01.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic03_02_max.png">
+              <img class="rounded" src="../pic/experience/pic03_02.png" />
+            </a>
+            <a data-fancybox="gallery" href="./pic/experience/pic03_03_max.png">
+              <img class="rounded" src="./pic/experience/pic03_03.png" />
+            </a>
+            <a data-fancybox="gallery" href="/pic/experience/pic03_04_max.png">
+                <img class="rounded" src="./pic/experience/pic03_04.png" />
+            </a>
+        </div>
     </ul>
 
-    <div class="camping_text">
-    <p>
-        ◾ 沙路馳騁，探險豐富多樣的地形<br>
-        ◾ 全程由專業教練指導，大小朋友都能玩得盡興　　<button class="hidetogglebtn">＋</button><br>
-         <!--◾ 星空電影院，邊烤棉花糖度過浪漫夜晚
-        ◾ 3 - 11 歲依小孩計價；滿 12歲以上依大人計價<br>
-        ◾ 省去帶裝備的麻煩，營區設備齊全，盥洗設備齊全<br>
-        ◾ 1 張雙人床、附冷暖氣、獨立衛浴設備、開放式專屬客廳與觀景區、獨立用餐環境、包區獨立衛浴、私人停車空間<br>
-        ◾ 可加購其他當地體驗與季節特色料理 -->
-    </p></div>
+
+
+<div class="camping_text">
+    <div class="camping_text_show hidetogglebtn">
+        <p>◾ 沙路馳騁，探險豐富多樣的地形<br>
+        ◾ 全程由專業教練指導，大小朋友都能玩得盡興</p>
+
+        <button class="hidetogglebtn">...＋</button>
     </div>
+
+<p class="showcontent">
+    ◾ 附贈活動攝影，為您紀錄生動影像<br>
+    ◾ 三種體驗時段讓你自行挑選，欣賞不同時刻的美景<br>
+    ◾ 兩人即可出發，說走就走
+    </p>
 </div>
+</div>
+</div> 
 
+<script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        // items:3,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:1400,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
+        },
+        600:{
+            items:2,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
+        },
+        1000:{
+            items:3,
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayTimeout:1400,
+            autoplayHoverPause:true,
+        }
+    }
 
+    });
+    $('.play').on('click',function(){
+        owl.trigger('play.owl.autoplay',[1000])
+    })
+    $('.stop').on('click',function(){
+        owl.trigger('stop.owl.autoplay')
+    })
+
+</script>
 
 <!----------- footer ------------>
 <footer class="footer">
@@ -185,7 +341,46 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script type="module">
+    import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.esm.js";
+  </script>
+  <!-- <script src="jquery.min.js"></script> -->
   <script>AOS.init();</script>
+
+    
+    <script>
+        /* 燈箱 */
+        Fancybox.bind('[data-fancybox="gallery"]', {
+        dragToClose: false,
+    
+        Toolbar: false,
+        closeButton: "top",
+    
+        Image: {
+        zoom: false,
+        },
+    
+        on: {
+        initCarousel: (fancybox) => {
+            const slide = fancybox.Carousel.slides[fancybox.Carousel.page];
+    
+            fancybox.$container.style.setProperty(
+            "--bg-image",
+            `url("${slide.$thumb.src}")`
+            );
+        },
+        "Carousel.change": (fancybox, carousel, to, from) => {
+            const slide = carousel.slides[to];
+    
+            fancybox.$container.style.setProperty(
+            "--bg-image",
+            `url("${slide.$thumb.src}")`
+            );
+        },
+        },
+    });
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>
