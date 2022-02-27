@@ -133,4 +133,3 @@ $(document).ready(function(){
 //   mask.classList.remove("mask")
 // }
 
-
