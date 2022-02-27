@@ -354,6 +354,7 @@ a[data-fancybox] img {
 }
 
 .windows_bn{
+    width: 550px;
     height: 500px;
     margin-left: 40px;
     overflow: hidden;
@@ -362,6 +363,7 @@ a[data-fancybox] img {
 .windows_bn img{
     width: 320px;
 }
+
 .windows_text h2{
     display: inline;
     border-bottom: 1.5px solid #ADAAA5;
