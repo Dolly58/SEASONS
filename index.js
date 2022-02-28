@@ -132,4 +132,3 @@ $(document).ready(function(){
 //   popup.classList.add("noshow")
 //   mask.classList.remove("mask")
 // }
-
