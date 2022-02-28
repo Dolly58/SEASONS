@@ -138,7 +138,7 @@
 <div class="news_bg"></div>
 
 <!----------- 疫情公告_彈窗 ------------>
-<div class="windows noshow">
+<div class="windows noshow" id="windows">
     <div class="windows_bn">
         <img src="./pic/news/news_window01.png" alt="">
     </div>
@@ -307,29 +307,6 @@
   <script src="news.js"></script>
   <script>AOS.init();</script>
 
-  <script>
-      
-    /*********** 最新消息彈窗 ***********/
-    let popup = document.getElementsByClassName('windows')[0];
-    let mask = document.getElementsByClassName('news_bg')[0];
-    let Xbtn = document.getElementById('close');
-    let box = document.getElementById('box');
 
-    box.onclick = function show(){
-    popup.classList.remove("noshow")
-    mask.classList.add("mask")
-    }
-
-    Xbtn.onclick  = function close(){
-    popup.classList.add("noshow")
-    mask.classList.remove("mask")
-    }
-
-    mask.onclick  = function close(){
-    popup.classList.add("noshow")
-    mask.classList.remove("mask")
-    }
-
-  </script>
 </body>
 </html>
