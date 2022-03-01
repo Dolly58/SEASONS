@@ -132,3 +132,15 @@ $(document).ready(function(){
 //   popup.classList.add("noshow")
 //   mask.classList.remove("mask")
 // }
+
+
+/*********** go to top ***********/
+$(".nav_right_top").click(function (e) {
+  e.preventDefault();
+  $("html,body").animate(
+    {
+      scrollTop: 0,
+    },
+    600
+  );
+})
