@@ -590,6 +590,15 @@ a[data-fancybox] img {
         background-position: center;
         background-size: cover;
     }
+
+    .about_pic01 , .about_pic02, .about_pic03, .about_pic04{
+        width: 100%;
+        /* height: 100px; */
+    }
+
+    .about ul{
+        flex-wrap:wrap;
+    }
     
 }
 
