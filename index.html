@@ -330,8 +330,33 @@
     $(window).load(function() {
     $("#status").delay(1000).fadeOut(1500);
     $("#preloader").delay(2000).fadeOut(2000);
+    document.cookie = "loading = on";
     })
+    
 
+   /*********** loading gif 不重複執行 ***********/ 
+    loading = document.cookie.indexOf("loading=");
+    if(loading = null){
+        console.log("on");
+        $("#status").show();
+        $("#preloader").show();
+    }
+    else{
+        console.log("off");
+        $("#status").hide();
+        $("#preloader").hide();
+    }
+
+    // loading  = document.cookie.index( "loading=")
+    // if(loading){
+    //     $("#status").show();
+    //     $("#preloader").show();
+    // }else{
+    //     $("#status").hide();
+    //     $("#preloader").hide();
+
+    // }
+    
 
     
   /*********** 主選單顏色變化 ***********/
